@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Exercise Dataset — Free JSON Sample with Images (EN/DE/ES) · RepDB</title>
+<meta name="description" content="Browse a free fitness exercise dataset: 21 exercises in JSON with classic transparent + flat illustrations, target muscles, equipment, MET, and EN/DE/ES instructions. Full 350+ commercial dataset at repdb.co." />
+<link rel="canonical" href="https://sergei-argutin.github.io/exercise-dataset/" />
+<meta property="og:title" content="Exercise Dataset — Free JSON Sample (RepDB)" />
+<meta property="og:description" content="21 fitness exercises in JSON with illustrations, muscles, equipment and EN/DE/ES instructions. Full commercial dataset at repdb.co." />
+<meta property="og:type" content="website" />
+<style>
+  :root{--bg:#0b0c0f;--card:#15171c;--mut:#9aa3af;--fg:#f3f4f6;--acc:#22c55e;--line:#252830}
+  *{box-sizing:border-box}
+  body{margin:0;font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--fg)}
+  a{color:var(--acc)}
+  header{padding:28px 20px 14px;max-width:1100px;margin:0 auto}
+  h1{font-size:1.7rem;margin:0 0 6px}
+  .sub{color:var(--mut);margin:0 0 14px}
+  .cta{display:inline-block;background:var(--acc);color:#06210f;font-weight:700;text-decoration:none;padding:9px 16px;border-radius:9px}
+  .bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;max-width:1100px;margin:8px auto 0;padding:0 20px}
+  input,select{background:var(--card);border:1px solid var(--line);color:var(--fg);padding:9px 11px;border-radius:8px;font-size:14px}
+  input{flex:1;min-width:180px}
+  .toggle{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+  .toggle button{background:var(--card);color:var(--mut);border:0;padding:9px 12px;cursor:pointer;font-size:13px}
+  .toggle button.on{background:var(--acc);color:#06210f;font-weight:700}
+  main{max-width:1100px;margin:18px auto 60px;padding:0 20px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;cursor:pointer;transition:.12s}
+  .card:hover{border-color:var(--acc);transform:translateY(-2px)}
+  .card .img{aspect-ratio:1;background:#0f1115 center/contain no-repeat}
+  .card .img.flat{background-size:cover}
+  .card .meta{padding:9px 11px}
+  .card .meta b{display:block;font-size:.92rem}
+  .card .meta span{color:var(--mut);font-size:.78rem;text-transform:capitalize}
+  .count{color:var(--mut);font-size:.85rem;margin:14px 2px}
+  dialog{background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:14px;max-width:680px;width:92%;padding:0}
+  dialog::backdrop{background:rgba(0,0,0,.6)}
+  .modal{padding:20px}
+  .modal h2{margin:0 0 2px}
+  .poses{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+  .poses figure{margin:0;background:#0f1115;border-radius:10px;padding:8px;text-align:center}
+  .poses img{width:100%;aspect-ratio:1;object-fit:contain}
+  .poses figcaption{color:var(--mut);font-size:.75rem;margin-top:4px}
+  .chips{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+  .chip{background:#0f1115;border:1px solid var(--line);border-radius:999px;padding:3px 10px;font-size:.75rem;color:var(--mut);text-transform:capitalize}
+  ol{padding-left:18px}
+  .foot{border-top:1px solid var(--line);margin-top:16px;padding-top:12px;color:var(--mut);font-size:.85rem}
+  .x{position:absolute;top:10px;right:14px;background:0;border:0;color:var(--mut);font-size:1.4rem;cursor:pointer}
+  .promo{background:linear-gradient(90deg,#0f2417,#14171c);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:0 0 18px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<header>
+  <h1>Free Exercise Dataset — JSON + Images</h1>
+  <p class="sub">A browsable sample of <b>RepDB</b>: 21 fitness exercises with classic (transparent) and flat illustrations, target muscles, equipment, MET, and instructions in English, German &amp; Spanish. The full dataset has 350+ exercises and a commercial license.</p>
+  <a class="cta" href="https://repdb.co">Get the full dataset →</a>
+</header>
+
+<div class="bar">
+  <input id="q" placeholder="Search exercises, muscles, equipment…" />
+  <select id="body"><option value="">All body parts</option></select>
+  <select id="equip"><option value="">All equipment</option></select>
+  <div class="toggle"><button data-style="flat" class="on">Flat</button><button data-style="classic">Classic</button></div>
+</div>
+
+<main>
+  <div class="promo">
+    <span>This is a free 21-exercise preview. The complete <b>350+ exercise</b> dataset (classic + flat, EN/DE/ES, SQLite + JSON) ships with a commercial license.</span>
+    <a class="cta" href="https://repdb.co/pricing">See pricing →</a>
+  </div>
+  <div class="count" id="count"></div>
+  <div class="grid" id="grid"></div>
+</main>
+
+<dialog id="dlg"><button class="x" onclick="dlg.close()">×</button><div class="modal" id="modal"></div></dialog>
+
+<script>
+let DATA=[], style="flat";
+const grid=document.getElementById('grid'), q=document.getElementById('q'),
+      bodySel=document.getElementById('body'), equipSel=document.getElementById('equip'),
+      countEl=document.getElementById('count'), dlg=document.getElementById('dlg'), modal=document.getElementById('modal');
+const cap=s=>(s||'').replace(/[-_]/g,' ');
+
+fetch('exercises.json').then(r=>r.json()).then(d=>{
+  DATA=d.exercises;
+  [...new Set(DATA.map(e=>e.body_part))].sort().forEach(v=>bodySel.add(new Option(cap(v),v)));
+  [...new Set(DATA.map(e=>e.equipment))].sort().forEach(v=>equipSel.add(new Option(cap(v),v)));
+  render();
+});
+
+function filtered(){
+  const t=q.value.toLowerCase(), b=bodySel.value, eq=equipSel.value;
+  return DATA.filter(e=>{
+    if(b&&e.body_part!==b) return false;
+    if(eq&&e.equipment!==eq) return false;
+    if(!t) return true;
+    return (e.name_en+' '+e.body_part+' '+e.equipment+' '+(e.primary_muscles||[]).join(' ')).toLowerCase().includes(t);
+  });
+}
+function img(e,pose){ const s=e.images[style]||e.images.flat; return (s&&(s[pose]||s.start))||''; }
+function render(){
+  const list=filtered();
+  countEl.textContent=list.length+' exercises';
+  grid.innerHTML='';
+  list.forEach(e=>{
+    const c=document.createElement('div'); c.className='card';
+    c.innerHTML=`<div class="img ${style}" style="background-image:url('${img(e,'peak')}')"></div>
+      <div class="meta"><b>${e.name_en}</b><span>${cap(e.body_part)} · ${cap(e.equipment)}</span></div>`;
+    c.onclick=()=>open_(e); grid.appendChild(c);
+  });
+}
+function open_(e){
+  const chips=[...(e.primary_muscles||[]),...(e.tags||[])].map(m=>`<span class="chip">${cap(m)}</span>`).join('');
+  const steps=(e.instructions_en||[]).map(s=>`<li>${s}</li>`).join('');
+  modal.innerHTML=`<h2>${e.name_en}</h2>
+    <div style="color:var(--mut)">${cap(e.difficulty)} · ${cap(e.mechanic)} · ${cap(e.category)}${e.met?' · MET '+e.met:''}</div>
+    <div class="poses">
+      <figure><img src="${img(e,'start')}" alt="${e.name_en} start"><figcaption>Start (${style})</figcaption></figure>
+      <figure><img src="${img(e,'peak')}" alt="${e.name_en} peak"><figcaption>Peak (${style})</figcaption></figure>
+    </div>
+    <p>${e.description_en||''}</p>
+    <div class="chips">${chips}</div>
+    ${steps?`<ol>${steps}</ol>`:''}
+    <div class="foot">German &amp; Spanish translations included in the JSON. Want all 350+ exercises with a commercial license? <a href="https://repdb.co">repdb.co →</a></div>`;
+  dlg.showModal();
+}
+q.oninput=bodySel.onchange=equipSel.onchange=render;
+document.querySelectorAll('.toggle button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.toggle button').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on'); style=b.dataset.style; render();
+});
+</script>
+</body>
+</html>
