@@ -21,7 +21,7 @@
   .bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;max-width:1100px;margin:8px auto 0;padding:0 20px}
   input,select{background:var(--card);border:1px solid var(--line);color:var(--fg);padding:9px 11px;border-radius:8px;font-size:14px}
   input{flex:1;min-width:180px}
-  .styletip{display:flex;align-items:center;gap:9px;color:var(--mut);font-size:.82rem;margin-left:auto}
+  .styletip{display:flex;align-items:center;gap:9px;color:var(--mut);font-size:.82rem;margin:2px 2px 14px}
   .styletip b{color:var(--fg)}
   .toggle{display:flex;border:1px solid var(--acc);border-radius:9px;overflow:hidden;flex-shrink:0}
   .toggle button{background:var(--card);color:var(--fg);border:0;padding:9px 15px;cursor:pointer;font-size:13px;font-weight:600;white-space:nowrap}
@@ -30,7 +30,6 @@
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}
   .card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;cursor:pointer;transition:.12s}
   .card:hover{border-color:var(--acc);transform:translateY(-2px)}
-  .card .badge{position:absolute;top:7px;right:7px;z-index:1;background:rgba(7,33,15,.92);color:var(--acc);border:1px solid var(--acc);font-size:.62rem;font-weight:700;padding:2px 7px;border-radius:999px}
   .card .img{aspect-ratio:1;background:#0f1115 center/contain no-repeat}
   .card .img.flat{background-size:cover}
   .card .meta{padding:9px 11px}
@@ -69,10 +68,6 @@
   <input id="q" placeholder="Search exercises, muscles, equipment…" />
   <select id="body"><option value="">All body parts</option></select>
   <select id="equip"><option value="">All equipment</option></select>
-  <div class="styletip">
-    <span>Every exercise — <b>2 image styles</b>:</span>
-    <div class="toggle"><button data-style="classic" class="on">Classic · transparent</button><button data-style="flat">Flat</button></div>
-  </div>
 </div>
 
 <main>
@@ -81,6 +76,10 @@
     <a class="cta" href="https://repdb.co/pricing">See pricing →</a>
   </div>
   <div class="count" id="count"></div>
+  <div class="styletip">
+    <span>Image style:</span>
+    <div class="toggle"><button data-style="classic" class="on">Classic · transparent</button><button data-style="flat">Flat</button></div>
+  </div>
   <div class="grid" id="grid"></div>
 </main>
 
@@ -123,8 +122,7 @@ function render(){
   grid.innerHTML='';
   list.forEach(e=>{
     const c=document.createElement('div'); c.className='card';
-    c.innerHTML=`<span class="badge">classic + flat</span>
-      <div class="img ${style}" style="${cardBg(e)}"></div>
+    c.innerHTML=`<div class="img ${style}" style="${cardBg(e)}"></div>
       <div class="meta"><b>${e.name_en}</b><span>${cap(e.body_part)} · ${cap(e.equipment)}</span></div>`;
     c.onclick=()=>open_(e); grid.appendChild(c);
   });
