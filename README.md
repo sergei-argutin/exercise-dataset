@@ -14,7 +14,7 @@
 **A free, ready-to-use fitness exercise dataset in JSON — 21 exercises, each with two illustration styles (classic transparent + flat), start/peak poses, target muscles, equipment, MET values, and full multilingual instructions (English, German, Spanish).**
 
 [![Exercises](https://img.shields.io/badge/Exercises-21%20(free%20sample)-blue?style=flat-square)](exercises.json)
-[![Full dataset](https://img.shields.io/badge/Full%20dataset-350%2B-success?style=flat-square)](https://repdb.co)
+[![Full dataset](https://img.shields.io/badge/Full%20dataset-400%2B-success?style=flat-square)](https://repdb.co)
 [![Images](https://img.shields.io/badge/WebP%20images-84-orange?style=flat-square)](images/)
 [![Languages](https://img.shields.io/badge/Languages-EN%20%7C%20DE%20%7C%20ES-9cf?style=flat-square)](#multilingual)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey?style=flat-square)](LICENSE-DATA.md)
@@ -33,7 +33,7 @@ If you've used [`free-exercise-db`](https://github.com/yuhonas/free-exercise-db)
 
 | | This free sample | [Full RepDB dataset](https://repdb.co) |
 |---|---|---|
-| Exercises | 21 | 350+ fully illustrated |
+| Exercises | 21 | 400+ fully illustrated |
 | Image styles | classic (transparent) + flat | both, every exercise |
 | Poses | start + peak | start + peak (+ looping animations on higher tiers) |
 | Languages | EN · DE · ES | EN · DE · ES |
@@ -108,7 +108,7 @@ The path is already in each record — `ex.images.classic.peak` → `images/clas
 <a name="multilingual"></a>
 ### Multilingual
 
-Names, descriptions, instructions, and tips ship in **English, German, and Spanish** for every exercise. The full dataset keeps the same EN/DE/ES coverage across all 350+ exercises.
+Names, descriptions, instructions, and tips ship in **English, German, and Spanish** for every exercise. The full dataset keeps the same EN/DE/ES coverage across all 400+ exercises.
 
 ## License
 
