@@ -14,7 +14,7 @@ The exercise data and images in this repository are a free sample subset of
   use — a paid app, a paid feature, an advertising-supported product, or client
   work — buy the commercial license and the full dataset at https://repdb.co.
 
-This sample is a deliberate 21-exercise subset. The full RepDB dataset (350+
+This sample is a deliberate 21-exercise subset. The full RepDB dataset (400+
 fully illustrated exercises, EN/DE/ES, classic + flat WebP) ships with a
 commercial license. See https://repdb.co/pricing.
 
