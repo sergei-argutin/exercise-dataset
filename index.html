@@ -105,8 +105,8 @@ const cap=s=>(s||'').replace(/[-_]/g,' ');
 fetch('exercises.json').then(r=>r.json()).then(d=>{
   DATA=d.exercises;
   document.querySelectorAll('.jscount').forEach(el=>el.textContent=DATA.length);
-  [...new Set(DATA.map(e=>e.body_part))].sort().forEach(v=>bodySel.add(new Option(cap(v),v)));
-  [...new Set(DATA.map(e=>e.equipment))].sort().forEach(v=>equipSel.add(new Option(cap(v),v)));
+  [...new Set(DATA.map(e=>e.body_part).filter(Boolean))].sort().forEach(v=>bodySel.add(new Option(cap(v),v)));
+  [...new Set(DATA.map(e=>e.equipment).filter(Boolean))].sort().forEach(v=>equipSel.add(new Option(cap(v),v)));
   render();
 });
 
@@ -116,7 +116,7 @@ function filtered(){
     if(b&&e.body_part!==b) return false;
     if(eq&&e.equipment!==eq) return false;
     if(!t) return true;
-    return (e.name_en+' '+e.body_part+' '+e.equipment+' '+(e.primary_muscles||[]).join(' ')).toLowerCase().includes(t);
+    return (e.name_en+' '+(e.body_part||'')+' '+(e.equipment||'')+' '+(e.primary_muscles||[]).join(' ')).toLowerCase().includes(t);
   });
 }
 function flat(e){ return (e.images||{}).flat||{}; }
@@ -128,7 +128,7 @@ function render(){
   list.forEach(e=>{
     const c=document.createElement('div'); c.className='card';
     c.innerHTML=`<div class="img" style="background-image:url('${cardImg(e)}')"></div>
-      <div class="meta"><b>${e.name_en}</b><span>${cap(e.body_part)} · ${cap(e.equipment)}</span></div>`;
+      <div class="meta"><b>${e.name_en}</b><span>${[e.body_part,e.equipment].filter(Boolean).map(cap).join(' · ')}</span></div>`;
     c.onclick=()=>open_(e); grid.appendChild(c);
   });
 }
