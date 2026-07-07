@@ -28,7 +28,7 @@
   "distribution": {
     "@type": "DataDownload",
     "encodingFormat": "application/json",
-    "contentUrl": "https://github.com/sergei-argutin/exercise-dataset"
+    "contentUrl": "https://raw.githubusercontent.com/sergei-argutin/exercise-dataset/main/exercises.json"
   }
 }
 </script>
@@ -171,7 +171,7 @@ function poses(e){
   </div>`;
   const u=f.main||f.start||f.peak;
   return u?`<div class="poses single">
-    <figure><img src="${u}" alt="${e.name_en}"><figcaption>Hold</figcaption></figure>
+    <figure><img src="${u}" alt="${e.name_en}"></figure>
   </div>`:'';
 }
 function open_(e){
