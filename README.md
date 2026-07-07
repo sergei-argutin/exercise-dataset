@@ -26,7 +26,7 @@
 
 ## What is this?
 
-This is the **free tier** of [**RepDB**](https://repdb.co), a curated commercial exercise dataset. It contains the free-tier snapshot (currently 400 of 455+ exercises, 2026-07): each exercise ships as JSON with flat-style 360 px WebP illustrations (start/peak poses, or a single pose for stretches), target muscles, equipment, goals, tags, MET values, and step-by-step instructions in **English, German, and Spanish**.
+This is the **free tier** of [**RepDB**](https://repdb.co), a curated commercial exercise dataset. It contains the free-tier snapshot (currently 400 of 470+ exercises, 2026-07): each exercise ships as JSON with flat-style 360 px WebP illustrations (start/peak poses, or a single pose for stretches), target muscles, equipment, goals, tags, MET values, and step-by-step instructions in **English, German, and Spanish**.
 
 Unlike the usual scraped exercise JSONs, everything here is original, consistent, and **usable in commercial apps for free** — the only hard requirement is attribution. And unlike an API, it's just files: no key, no rate limit, no uptime to worry about.
 
@@ -79,14 +79,14 @@ Each entry in `exercises[]`:
 |---|---|---|
 | `id` | string | URL-safe slug, e.g. `bulgarian-split-squat` |
 | `name_en` / `name_de` / `name_es` | string | Display name per locale |
-| `description_en` / `_de` / `_es` | string | One-line summary |
+| `description_en` / `_de` / `_es` | string | One-line summary (where available) |
 | `instructions_en` / `_de` / `_es` | string[] | Step-by-step |
 | `tips_en` / `_de` / `_es` | string[] | Form cues (where available) |
 | `category` | string | `strength`, `stretching`, … |
-| `force_type` | string | `push` / `pull` / `static` |
+| `force_type` | string | `push` / `pull` / `static` / `dynamic` |
 | `mechanic` | string | `compound` / `isolation` |
 | `difficulty` | string | `beginner` / `intermediate` / `advanced` |
-| `equipment` | string | e.g. `dumbbell`, `kettlebell`, `cable` |
+| `equipment` | string | e.g. `dumbbell`, `kettlebell`, `cable` — absent for bodyweight-only moves |
 | `body_part` | string | Primary region |
 | `primary_muscles` / `secondary_muscles` | string[] | Anatomical slugs |
 | `goals` | string[] | e.g. `hypertrophy`, `strength` |

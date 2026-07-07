@@ -9,6 +9,29 @@
 <meta property="og:title" content="Free Exercise Dataset — 400 Exercises (RepDB)" />
 <meta property="og:description" content="400 fitness exercises in JSON with illustrations, muscles, equipment and EN/DE/ES instructions. Free with attribution. The full paid dataset keeps growing at repdb.co." />
 <meta property="og:type" content="website" />
+<meta property="og:image" content="https://sergei-argutin.github.io/exercise-dataset/images/flat/squat-peak.webp" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "RepDB Exercise Dataset (free tier)",
+  "description": "Free multilingual fitness exercise dataset: exercises in JSON with flat WebP illustrations, target muscles, equipment, MET values, and step-by-step instructions in English, German and Spanish. Free for personal and commercial in-app use with attribution.",
+  "url": "https://sergei-argutin.github.io/exercise-dataset/",
+  "license": "https://github.com/sergei-argutin/exercise-dataset/blob/main/LICENSE-DATA.md",
+  "isAccessibleForFree": true,
+  "inLanguage": ["en", "de", "es"],
+  "creator": {
+    "@type": "Organization",
+    "name": "RepDB",
+    "url": "https://repdb.co"
+  },
+  "distribution": {
+    "@type": "DataDownload",
+    "encodingFormat": "application/json",
+    "contentUrl": "https://github.com/sergei-argutin/exercise-dataset"
+  }
+}
+</script>
 <style>
   :root{--bg:#0b0c0f;--card:#15171c;--mut:#9aa3af;--fg:#f3f4f6;--acc:#22c55e;--line:#252830}
   *{box-sizing:border-box}
@@ -24,8 +47,9 @@
   main{max-width:1100px;margin:18px auto 60px;padding:0 20px}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}
   .card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;cursor:pointer;transition:.12s}
-  .card:hover{border-color:var(--acc);transform:translateY(-2px)}
-  .card .img{aspect-ratio:1;background:#0f1115 center/cover no-repeat}
+  .card:hover,.card:focus-visible{border-color:var(--acc);transform:translateY(-2px)}
+  .card:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+  .card .img{display:block;width:100%;aspect-ratio:1;object-fit:cover;background:#0f1115}
   .card .meta{padding:9px 11px}
   .card .meta b{display:block;font-size:.92rem}
   .card .meta span{color:var(--mut);font-size:.78rem;text-transform:capitalize}
@@ -65,9 +89,9 @@
 </header>
 
 <div class="bar">
-  <input id="q" placeholder="Search exercises, muscles, equipment…" />
-  <select id="body"><option value="">All body parts</option></select>
-  <select id="equip"><option value="">All equipment</option></select>
+  <input id="q" placeholder="Search exercises, muscles, equipment…" aria-label="Search exercises, muscles, equipment" />
+  <select id="body" aria-label="Filter by body part"><option value="">All body parts</option></select>
+  <select id="equip" aria-label="Filter by equipment"><option value="">All equipment</option></select>
 </div>
 
 <main>
@@ -93,7 +117,7 @@
   </section>
 </main>
 
-<dialog id="dlg"><button class="x" onclick="dlg.close()">×</button><div class="modal" id="modal"></div></dialog>
+<dialog id="dlg"><button class="x" aria-label="Close" onclick="dlg.close()">×</button><div class="modal" id="modal"></div></dialog>
 
 <script>
 let DATA=[];
@@ -108,7 +132,10 @@ fetch('exercises.json').then(r=>r.json()).then(d=>{
   [...new Set(DATA.map(e=>e.body_part).filter(Boolean))].sort().forEach(v=>bodySel.add(new Option(cap(v),v)));
   [...new Set(DATA.map(e=>e.equipment).filter(Boolean))].sort().forEach(v=>equipSel.add(new Option(cap(v),v)));
   render();
+}).catch(()=>{
+  grid.innerHTML='<p class="count">Could not load exercises.json — try reloading, or browse the <a href="https://github.com/sergei-argutin/exercise-dataset">repository files</a> directly.</p>';
 });
+dlg.onclick=ev=>{ if(ev.target===dlg) dlg.close(); };
 
 function filtered(){
   const t=q.value.toLowerCase(), b=bodySel.value, eq=equipSel.value;
@@ -127,9 +154,13 @@ function render(){
   grid.innerHTML='';
   list.forEach(e=>{
     const c=document.createElement('div'); c.className='card';
-    c.innerHTML=`<div class="img" style="background-image:url('${cardImg(e)}')"></div>
+    c.tabIndex=0; c.setAttribute('role','button');
+    c.setAttribute('aria-label','Show details for '+e.name_en);
+    c.innerHTML=`<img class="img" loading="lazy" src="${cardImg(e)}" alt="">
       <div class="meta"><b>${e.name_en}</b><span>${[e.body_part,e.equipment].filter(Boolean).map(cap).join(' · ')}</span></div>`;
-    c.onclick=()=>open_(e); grid.appendChild(c);
+    c.onclick=()=>open_(e);
+    c.onkeydown=ev=>{ if(ev.key==='Enter'||ev.key===' '){ ev.preventDefault(); open_(e); } };
+    grid.appendChild(c);
   });
 }
 function poses(e){
@@ -140,7 +171,7 @@ function poses(e){
   </div>`;
   const u=f.main||f.start||f.peak;
   return u?`<div class="poses single">
-    <figure><img src="${u}" alt="${e.name_en}"><figcaption>${cap(e.name_en)}</figcaption></figure>
+    <figure><img src="${u}" alt="${e.name_en}"><figcaption>Hold</figcaption></figure>
   </div>`:'';
 }
 function open_(e){
