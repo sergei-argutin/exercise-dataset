@@ -1,21 +1,38 @@
-# RepDB Exercise Dataset — Data & Image License (CC BY-NC 4.0)
+# RepDB — Free Tier License (v1.0)
 
-The exercise data and images in this repository are a free sample subset of
-[**RepDB**](https://repdb.co), distributed under the
-[Creative Commons Attribution-NonCommercial 4.0 International License][cc].
+**This license covers the RepDB free-tier exercise dataset (JSON) and associated WebP image assets distributed in this repository.**
 
-## You may
-- Share and adapt the data and images.
-- Use them in personal, research, and other non-commercial projects.
+## Tier scope
 
-## You must
-- Give appropriate credit: **"Exercise data & images: RepDB (https://repdb.co)"**.
-- **Not** use the material for commercial purposes. For any revenue-generating
-  use — a paid app, a paid feature, an advertising-supported product, or client
-  work — buy the commercial license and the full dataset at https://repdb.co.
+**Free** — a dated snapshot of the RepDB exercise dataset with flat-style images, for personal or commercial use inside applications, with attribution.
 
-This sample is a deliberate 21-exercise subset. The full RepDB dataset (400+
-fully illustrated exercises, EN/DE/ES, classic + flat WebP) ships with a
-commercial license. See https://repdb.co/pricing.
+If you need the full, growing dataset, 1024px images, the classic image style, transparent backgrounds, or animated exercises, upgrade at https://repdb.co/pricing.
 
-[cc]: https://creativecommons.org/licenses/by-nc/4.0/
+**About this repository.** This repository is the canonical free-tier distribution published by RepDB itself. Term 3 (no redistribution as a dataset) binds third parties — it does not restrict RepDB's own publication here, on Kaggle, or on Hugging Face. Forks made for the purpose of contributing back are fine; republishing a fork as your own dataset is not.
+
+## Terms
+
+1. **Free for personal and commercial use inside applications.** You may use the dataset and images inside applications — apps, websites, research projects — for personal and commercial purposes, at no cost.
+
+2. **Attribution required.** Place a visible link — "Exercise data by RepDB (repdb.co)" — in your app's about/credits screen, your project's README, or your website footer.
+
+3. **No redistribution as a dataset.** You may not republish, resell, or repackage the dataset — or a modified or derived dataset — as a dataset, dataset repository, or API. In-app use only.
+
+4. **Image modifications.** Images may be resized, cropped, or recolored for in-app use. Upscaled or background-removed derivatives fall under the same no-redistribution rule (term 3).
+
+5. **No generative-AI derivation.** The images may not be used as input, reference, or conditioning material for generative models — image-to-image restyling, style transfer, model fine-tuning, or similar — whether to recreate the artwork in another style or to train models on it. Outputs of such processes count as derived datasets under term 3 and may not be used in applications or redistributed.
+
+6. **`upgrade-samples/` is evaluation-only.** The sample assets in the `upgrade-samples/` folder are provided so you can evaluate the quality of the paid tiers. They may not be used in production applications or redistributed — terms 1–2 do not extend to that folder.
+
+7. **No warranty; not medical advice.** The dataset is provided "as is" without warranty of any kind, to the extent permitted by law. To the extent permitted by applicable law, RepDB's liability for damages arising from use of the data is excluded. This exclusion does not apply to liability for injury to life, body or health, to intent or gross negligence, to claims under the German Product Liability Act (Produkthaftungsgesetz), or to any other liability that cannot legally be excluded. Exercise content is informational and not medical advice; consult a physician before starting any exercise program. Users perform exercises at their own risk.
+
+## Origin of the data
+
+The dataset was compiled independently by RepDB. All images are original works generated with AI tooling commissioned by RepDB — not copied or derived from any third-party exercise dataset or image library. The dataset's structure and selection are protected as a database (sui generis database right, §§ 87a ff. UrhG) independently of the copyright status of individual images.
+
+## Licensor & contact
+
+RepDB is operated by Sergei Argutin, Regener Str. 51, 10318 Berlin, Germany.
+License questions: support@repdb.co
+
+© 2026 Sergei Argutin (RepDB). All rights reserved.

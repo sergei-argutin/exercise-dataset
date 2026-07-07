@@ -1,6 +1,6 @@
 <div align="center">
 
-# 💪 Exercise Dataset — Free JSON Sample (RepDB)
+# 💪 Free Exercise Dataset — JSON + Images (RepDB free tier)
 
 <p>
   <img src="images/flat/arnold-press-start.webp" width="130" />
@@ -11,15 +11,14 @@
   <img src="images/flat/cable-crunch-peak.webp" width="130" />
 </p>
 
-**A free, ready-to-use fitness exercise dataset in JSON — 21 exercises, each with two illustration styles (classic transparent + flat), start/peak poses, target muscles, equipment, MET values, and full multilingual instructions (English, German, Spanish).**
+**A free, ready-to-use multilingual fitness exercise dataset — JSON + 360 px flat WebP illustrations, with target muscles, equipment, MET values, and full instructions in English, German & Spanish. Free for personal *and* commercial in-app use, with attribution.**
 
-[![Exercises](https://img.shields.io/badge/Exercises-21%20(free%20sample)-blue?style=flat-square)](exercises.json)
-[![Full dataset](https://img.shields.io/badge/Full%20dataset-400%2B-success?style=flat-square)](https://repdb.co)
-[![Images](https://img.shields.io/badge/WebP%20images-84-orange?style=flat-square)](images/)
+[![Data](https://img.shields.io/badge/Data-JSON%20%2B%20WebP-blue?style=flat-square)](exercises.json)
 [![Languages](https://img.shields.io/badge/Languages-EN%20%7C%20DE%20%7C%20ES-9cf?style=flat-square)](#multilingual)
-[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey?style=flat-square)](LICENSE-DATA.md)
+[![License](https://img.shields.io/badge/License-Free%20tier%20(attribution)-success?style=flat-square)](LICENSE-DATA.md)
+[![Full dataset](https://img.shields.io/badge/Full%20dataset-repdb.co-lightgrey?style=flat-square)](https://repdb.co)
 
-**[🌐 Browse the exercises →](https://sergei-argutin.github.io/exercise-dataset/)** &nbsp;·&nbsp; **[⬇️ Get the full commercial dataset →](https://repdb.co)**
+**[🌐 Browse the exercises live →](https://sergei-argutin.github.io/exercise-dataset/)** &nbsp;·&nbsp; **[⬆️ Paid tiers →](https://repdb.co/pricing)**
 
 </div>
 
@@ -27,37 +26,38 @@
 
 ## What is this?
 
-This is the **free preview** of [**RepDB**](https://repdb.co) — a curated, commercial-safe exercise dataset. It's a small, honest sample (21 hand-picked exercises) so you can inspect the data shape, the image quality, and the multilingual coverage before buying.
+This is the **free tier** of [**RepDB**](https://repdb.co), a curated commercial exercise dataset. It contains the free-tier snapshot (currently 400 of 455+ exercises, 2026-07): each exercise ships as JSON with flat-style 360 px WebP illustrations (start/peak poses, or a single pose for stretches), target muscles, equipment, goals, tags, MET values, and step-by-step instructions in **English, German, and Spanish**.
 
-If you've used [`free-exercise-db`](https://github.com/yuhonas/free-exercise-db), the open ExerciseDB scrapes, or a public-domain workout JSON and wished it had **consistent illustrations, transparent-background images, German/Spanish translations, and a license you can actually ship commercially** — that's what the full RepDB bundle is. This repo lets you try a slice of it for free.
+Unlike the usual scraped exercise JSONs, everything here is original, consistent, and **usable in commercial apps for free** — the only hard requirement is attribution. And unlike an API, it's just files: no key, no rate limit, no uptime to worry about.
 
-| | This free sample | [Full RepDB dataset](https://repdb.co) |
-|---|---|---|
-| Exercises | 21 | 400+ fully illustrated |
-| Image styles | classic (transparent) + flat | both, every exercise |
-| Poses | start + peak | start + peak (+ looping animations on higher tiers) |
-| Languages | EN · DE · ES | EN · DE · ES |
-| Muscles / equipment / MET | ✅ | ✅ |
-| Alternatives & progressions | — | ✅ |
-| Delivery | this repo (JSON + WebP) | JSON + SQLite + WebP, one download |
-| License | CC BY-NC 4.0 (non-commercial) | **Commercial license included** |
-| API / rate limits | none (it's just files) | none (it's just files) |
+> [!IMPORTANT]
+> **Attribution is required.** Place a visible link — **"Exercise data by RepDB (repdb.co)"** — in your app's about/credits screen, your project's README, or your website footer. That's the price of the free tier.
 
-➡️ **For commercial use or the complete dataset, see [repdb.co](https://repdb.co).** One payment, no API, no rate limits, lifetime access + free updates.
+## License (summary)
+
+Full text: [`LICENSE-DATA.md`](LICENSE-DATA.md). The seven terms in short:
+
+1. **Free for personal and commercial use inside applications** — apps, websites, research projects, at no cost.
+2. **Attribution required** — a visible "Exercise data by RepDB (repdb.co)" link.
+3. **No redistribution as a dataset** — don't republish, resell, or repackage it (or a derivative) as a dataset, dataset repo, or API. In-app use only.
+4. **Image modifications** — resize/crop/recolor for in-app use is fine; upscaled or background-removed derivatives still fall under the no-redistribution rule.
+5. **No generative-AI derivation** — the images may not be used as input, reference, or training/conditioning material for generative models (image-to-image restyling, style transfer, fine-tuning, etc.); outputs count as derived datasets.
+6. **`upgrade-samples/` is evaluation-only** — the paid-tier samples in that folder may not be used in production or redistributed.
+7. **No warranty; not medical advice.**
+
+This repository is RepDB's own canonical free-tier distribution — term 3 restricts third parties, not this publication (see the "About this repository" note in the license). The `index.html` viewer code is [MIT](LICENSE-CODE).
 
 ## Quickstart
-
-Everything is plain files — no API, no key, no rate limit.
 
 ```js
 const data = await fetch(
   "https://raw.githubusercontent.com/sergei-argutin/exercise-dataset/main/exercises.json"
 ).then(r => r.json());
 
-console.log(data.count);                       // 21
+console.log(data.count, "exercises");
 const ex = data.exercises[0];
-console.log(ex.name_en, "·", ex.name_de);      // "Arnold Press · Arnold Press"
-console.log(ex.images.classic.start);          // "images/classic/arnold-press-start.webp"
+console.log(ex.name_en, "·", ex.name_de, "·", ex.name_es);
+console.log(ex.images.flat.start);   // "images/flat/<id>-start.webp"
 ```
 
 ```python
@@ -71,7 +71,7 @@ for ex in data["exercises"]:
 
 ## Schema
 
-`exercises.json` is a single object: `{ name, homepage, license, schema_version, count, exercises[] }`.
+`exercises.json` is a single object: `{ name, homepage, license, schema_version, count, note, exercises[] }`.
 
 Each entry in `exercises[]`:
 
@@ -93,32 +93,49 @@ Each entry in `exercises[]`:
 | `tags` | string[] | e.g. `knee_safe`, `no_axial_load` |
 | `met` | number | Metabolic equivalent (for calorie estimates) |
 | `is_unilateral` / `is_bodyweight` | bool | |
-| `images` | object | `{ classic: {start, peak}, flat: {start, peak} }` → repo-relative WebP paths |
+| `images` | object | `{ flat: {start, peak} }` **or** `{ flat: {main} }` → repo-relative WebP paths |
 
 ### Images
 
-84 WebP files (21 exercises × 2 styles × 2 poses), 512×512:
-
-- `images/classic/` — 3D-render style on a **transparent** background (drop onto any UI).
-- `images/flat/` — flat illustration on a solid designed background.
-- Poses: `start` (setup) and `peak` (top of the movement).
-
-The path is already in each record — `ex.images.classic.peak` → `images/classic/<id>-peak.webp`.
+- `images/flat/` — flat-illustration style on a solid designed background, **360×360 WebP**.
+- Most exercises have two poses, `start` and `peak`; stretches and holds have a single `main` pose. **Handle both shapes.**
+- Some near-identical exercise variants intentionally share the same image file (aliases) — key your UI by exercise `id`, not by image path.
+- The path is already in each record — `ex.images.flat.peak` → `images/flat/<id>-peak.webp`.
 
 <a name="multilingual"></a>
 ### Multilingual
 
-Names, descriptions, instructions, and tips ship in **English, German, and Spanish** for every exercise. The full dataset keeps the same EN/DE/ES coverage across all 400+ exercises.
+Names, descriptions, instructions, and tips ship in **English, German, and Spanish** for every exercise in this snapshot — same coverage as the paid dataset.
 
-## License
+## `upgrade-samples/` — paid-tier preview (evaluation only)
 
-- **Data & images** — [CC BY-NC 4.0](LICENSE-DATA.md). Free for personal, research, and non-commercial use **with attribution**. Shipping in anything that earns money (paid app, paid feature, ad-supported product, client work) requires the commercial license → [repdb.co](https://repdb.co).
-- **Code** (`index.html` viewer) — [MIT](LICENSE-CODE).
+The [`upgrade-samples/`](upgrade-samples/) folder holds a handful of **Standard-tier** assets — 1024 px classic-style WebP with true transparent backgrounds, plus one looping transparent animation — so you can judge the paid quality before buying. They are **evaluation-only**: not for production use, not for redistribution (license term 6). See them rendered on the [live viewer](https://sergei-argutin.github.io/exercise-dataset/).
 
-Attribution: *Exercise data & images: [RepDB](https://repdb.co).*
+## Free vs. paid tiers
+
+| | **Free** (this repo) | [**Starter**](https://repdb.co/pricing) | [**Standard**](https://repdb.co/pricing) |
+|---|---|---|---|
+| Images | flat, 360 px | classic white-background, 1024 px + flat | Starter **+ transparent backgrounds + looping animations** |
+| Exercise set | dated snapshot | full, growing dataset | full, growing dataset |
+| Updates | quarterly lagged snapshot | continuous | continuous |
+| Formats | JSON + WebP | JSON + SQLite + WebP | JSON + SQLite + WebP + animations |
+| Languages | EN · DE · ES | EN · DE · ES | EN · DE · ES |
+| License | attribution, in-app only | commercial, no attribution | commercial, no attribution |
+
+For perspective: **our free tier ships the resolution ExerciseDB charges $299 for.**
+
+➡️ **[repdb.co/pricing](https://repdb.co/pricing)** — one payment, no API, no rate limits, free updates.
+
+## See it in real apps
+
+Example integrations (each vendors this dataset):
+
+- ▲ **Next.js** — https://github.com/sergei-argutin/repdb-example-nextjs
+- 📱 **React Native (Expo)** — https://github.com/sergei-argutin/repdb-example-react-native
+- 🐦 **Flutter** — https://github.com/sergei-argutin/repdb-example-flutter
 
 ## Links
 
 - 🌐 **Full dataset & pricing** — https://repdb.co
-- 🧪 **Live browser for this sample** — https://sergei-argutin.github.io/exercise-dataset/
+- 🧪 **Live browser for this dataset** — https://sergei-argutin.github.io/exercise-dataset/
 - 💬 **Questions** — support@repdb.co

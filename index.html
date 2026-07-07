@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Exercise Dataset — Free JSON Sample with Images (EN/DE/ES) · RepDB</title>
-<meta name="description" content="Browse a free fitness exercise dataset: 21 exercises in JSON with classic transparent + flat illustrations, target muscles, equipment, MET, and EN/DE/ES instructions. Full 400+ commercial dataset at repdb.co." />
+<title>Free Exercise Dataset — 400 Exercises, JSON + Images (EN/DE/ES) · RepDB</title>
+<meta name="description" content="Browse RepDB's free exercise dataset: 400 exercises in JSON with flat illustrations, target muscles, equipment, MET, and EN/DE/ES instructions. Free for commercial in-app use with attribution. Full paid dataset at repdb.co." />
 <link rel="canonical" href="https://sergei-argutin.github.io/exercise-dataset/" />
-<meta property="og:title" content="Exercise Dataset — Free JSON Sample (RepDB)" />
-<meta property="og:description" content="21 fitness exercises in JSON with illustrations, muscles, equipment and EN/DE/ES instructions. Full commercial dataset at repdb.co." />
+<meta property="og:title" content="Free Exercise Dataset — 400 Exercises (RepDB)" />
+<meta property="og:description" content="400 fitness exercises in JSON with illustrations, muscles, equipment and EN/DE/ES instructions. Free with attribution. The full paid dataset keeps growing at repdb.co." />
 <meta property="og:type" content="website" />
 <style>
   :root{--bg:#0b0c0f;--card:#15171c;--mut:#9aa3af;--fg:#f3f4f6;--acc:#22c55e;--line:#252830}
@@ -21,17 +21,11 @@
   .bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;max-width:1100px;margin:8px auto 0;padding:0 20px}
   input,select{background:var(--card);border:1px solid var(--line);color:var(--fg);padding:9px 11px;border-radius:8px;font-size:14px}
   input{flex:1;min-width:180px}
-  .styletip{display:flex;align-items:center;gap:9px;color:var(--mut);font-size:.82rem;margin:2px 2px 14px}
-  .styletip b{color:var(--fg)}
-  .toggle{display:flex;border:1px solid var(--acc);border-radius:9px;overflow:hidden;flex-shrink:0}
-  .toggle button{background:var(--card);color:var(--fg);border:0;padding:9px 15px;cursor:pointer;font-size:13px;font-weight:600;white-space:nowrap}
-  .toggle button.on{background:var(--acc);color:#06210f}
   main{max-width:1100px;margin:18px auto 60px;padding:0 20px}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}
   .card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;cursor:pointer;transition:.12s}
   .card:hover{border-color:var(--acc);transform:translateY(-2px)}
-  .card .img{aspect-ratio:1;background:#0f1115 center/contain no-repeat}
-  .card .img.flat{background-size:cover}
+  .card .img{aspect-ratio:1;background:#0f1115 center/cover no-repeat}
   .card .meta{padding:9px 11px}
   .card .meta b{display:block;font-size:.92rem}
   .card .meta span{color:var(--mut);font-size:.78rem;text-transform:capitalize}
@@ -40,13 +34,9 @@
   dialog::backdrop{background:rgba(0,0,0,.6)}
   .modal{padding:20px}
   .modal h2{margin:0 0 2px}
-  .stylegrp{margin:14px 0}
-  .stylegrp .lbl{display:flex;align-items:center;gap:8px;font-size:.82rem;font-weight:700;margin-bottom:6px}
-  .stylegrp .tag{background:var(--acc);color:#06210f;border-radius:999px;padding:1px 8px;font-size:.64rem;font-weight:700}
-  .stylegrp .tag.alt{background:transparent;color:var(--mut);border:1px solid var(--line)}
-  .poses{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .poses{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+  .poses.single{grid-template-columns:minmax(0,340px)}
   .poses figure{margin:0;background:#0f1115;border-radius:10px;padding:8px;text-align:center}
-  .poses figure.t{background-image:conic-gradient(#1b1e25 90deg,#0f1217 0 180deg,#1b1e25 0 270deg,#0f1217 0);background-size:16px 16px}
   .poses img{width:100%;aspect-ratio:1;object-fit:contain}
   .poses figcaption{color:var(--mut);font-size:.75rem;margin-top:4px}
   .chips{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
@@ -55,12 +45,22 @@
   .foot{border-top:1px solid var(--line);margin-top:16px;padding-top:12px;color:var(--mut);font-size:.85rem}
   .x{position:absolute;top:10px;right:14px;background:0;border:0;color:var(--mut);font-size:1.4rem;cursor:pointer}
   .promo{background:linear-gradient(90deg,#0f2417,#14171c);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:0 0 18px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+  .upgrade{margin:48px 0 0;border-top:1px solid var(--line);padding-top:28px}
+  .upgrade h2{font-size:1.25rem;margin:0 0 4px}
+  .upgrade .note{color:var(--mut);font-size:.88rem;margin:0 0 16px}
+  .upgrade .note b{color:var(--fg)}
+  .samples{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px}
+  .samples figure{margin:0;border:1px solid var(--line);border-radius:12px;padding:8px;text-align:center;
+    background-image:conic-gradient(#1b1e25 90deg,#0f1217 0 180deg,#1b1e25 0 270deg,#0f1217 0);background-size:16px 16px}
+  .samples img{width:100%;aspect-ratio:1;object-fit:contain}
+  .samples figcaption{color:var(--mut);font-size:.75rem;margin-top:4px;background:var(--bg);border-radius:6px;padding:2px 4px}
+  .samples .tag{color:var(--acc);font-weight:700}
 </style>
 </head>
 <body>
 <header>
   <h1>Free Exercise Dataset — JSON + Images</h1>
-  <p class="sub">A browsable sample of <b>RepDB</b>: 21 fitness exercises with classic (transparent) and flat illustrations, target muscles, equipment, MET, and instructions in English, German &amp; Spanish. The full dataset has 400+ exercises and a commercial license.</p>
+  <p class="sub">The free tier of <b>RepDB</b>: <b class="jscount">400</b> fitness exercises with flat illustrations, target muscles, equipment, MET, and instructions in English, German &amp; Spanish. Free for personal and commercial in-app use with attribution — see <a href="https://github.com/sergei-argutin/exercise-dataset/blob/main/LICENSE-DATA.md">LICENSE-DATA.md</a>. The full paid dataset keeps growing and adds high-res classic images, transparency and animations.</p>
   <a class="cta" href="https://repdb.co">Get the full dataset →</a>
 </header>
 
@@ -72,21 +72,31 @@
 
 <main>
   <div class="promo">
-    <span>This is a free 21-exercise preview. The complete <b>400+ exercise</b> dataset — every one in <b>both styles</b> (classic transparent + flat), EN/DE/ES, SQLite + JSON — ships with a commercial license.</span>
+    <span>This is the <b>free tier</b> — <b><span class="jscount">400</span> exercises</b>, flat style, 360&nbsp;px, EN/DE/ES, attribution license. The full paid dataset keeps growing and ships classic white-background 1024&nbsp;px images, transparent backgrounds and looping animations.</span>
     <a class="cta" href="https://repdb.co/pricing">See pricing →</a>
   </div>
   <div class="count" id="count"></div>
-  <div class="styletip">
-    <span>Image style:</span>
-    <div class="toggle"><button data-style="classic" class="on">Classic · transparent</button><button data-style="flat">Flat</button></div>
-  </div>
   <div class="grid" id="grid"></div>
+
+  <section class="upgrade">
+    <h2>Upgrade samples — Standard tier preview</h2>
+    <p class="note"><b>Standard tier quality — evaluation only, see <a href="https://github.com/sergei-argutin/exercise-dataset/blob/main/LICENSE-DATA.md">LICENSE-DATA.md</a>.</b>
+      1024&nbsp;px classic-style WebP with true transparent backgrounds (shown on a checkerboard), plus a looping transparent animation. Every exercise gets these on the paid tiers → <a href="https://repdb.co/pricing">repdb.co/pricing</a>.</p>
+    <div class="samples">
+      <figure><img src="upgrade-samples/deadlift-start.webp" alt="Deadlift — classic transparent, 1024px" loading="lazy"><figcaption>Deadlift · start</figcaption></figure>
+      <figure><img src="upgrade-samples/squat-start.webp" alt="Squat — classic transparent, 1024px" loading="lazy"><figcaption>Squat · start</figcaption></figure>
+      <figure><img src="upgrade-samples/bench-press-start.webp" alt="Bench Press — classic transparent, 1024px" loading="lazy"><figcaption>Bench Press · start</figcaption></figure>
+      <figure><img src="upgrade-samples/kettlebell-swing-start.webp" alt="Kettlebell Swing — classic transparent, 1024px" loading="lazy"><figcaption>Kettlebell Swing · start</figcaption></figure>
+      <figure><img src="upgrade-samples/mountain-climbers-start.webp" alt="Mountain Climbers — classic transparent, 1024px" loading="lazy"><figcaption>Mountain Climbers · start</figcaption></figure>
+      <figure><img src="upgrade-samples/mountain-climbers.webp" alt="Mountain Climbers — looping transparent animation" loading="lazy"><figcaption>Mountain Climbers · <span class="tag">animation</span></figcaption></figure>
+    </div>
+  </section>
 </main>
 
 <dialog id="dlg"><button class="x" onclick="dlg.close()">×</button><div class="modal" id="modal"></div></dialog>
 
 <script>
-let DATA=[], style="classic";
+let DATA=[];
 const grid=document.getElementById('grid'), q=document.getElementById('q'),
       bodySel=document.getElementById('body'), equipSel=document.getElementById('equip'),
       countEl=document.getElementById('count'), dlg=document.getElementById('dlg'), modal=document.getElementById('modal');
@@ -94,6 +104,7 @@ const cap=s=>(s||'').replace(/[-_]/g,' ');
 
 fetch('exercises.json').then(r=>r.json()).then(d=>{
   DATA=d.exercises;
+  document.querySelectorAll('.jscount').forEach(el=>el.textContent=DATA.length);
   [...new Set(DATA.map(e=>e.body_part))].sort().forEach(v=>bodySel.add(new Option(cap(v),v)));
   [...new Set(DATA.map(e=>e.equipment))].sort().forEach(v=>equipSel.add(new Option(cap(v),v)));
   render();
@@ -108,53 +119,43 @@ function filtered(){
     return (e.name_en+' '+e.body_part+' '+e.equipment+' '+(e.primary_muscles||[]).join(' ')).toLowerCase().includes(t);
   });
 }
-const CHECKER="conic-gradient(#1b1e25 90deg,#0f1217 0 180deg,#1b1e25 0 270deg,#0f1217 0)";
-function imgFor(e,st,pose){ const s=(e.images||{})[st]||{}; return s[pose]||s.start||''; }
-function img(e,pose){ return imgFor(e,style,pose)||imgFor(e,'flat',pose); }
-function cardBg(e){
-  const u=img(e,'peak');
-  if(style==='classic') return `background-image:url('${u}'),${CHECKER};background-size:contain,16px 16px;background-repeat:no-repeat,repeat;background-position:center,0 0`;
-  return `background-image:url('${u}')`;
-}
+function flat(e){ return (e.images||{}).flat||{}; }
+function cardImg(e){ const f=flat(e); return f.peak||f.main||f.start||''; }
 function render(){
   const list=filtered();
-  countEl.textContent=list.length+' exercises · each in 2 styles';
+  countEl.textContent=list.length+' of '+DATA.length+' exercises';
   grid.innerHTML='';
   list.forEach(e=>{
     const c=document.createElement('div'); c.className='card';
-    c.innerHTML=`<div class="img ${style}" style="${cardBg(e)}"></div>
+    c.innerHTML=`<div class="img" style="background-image:url('${cardImg(e)}')"></div>
       <div class="meta"><b>${e.name_en}</b><span>${cap(e.body_part)} · ${cap(e.equipment)}</span></div>`;
     c.onclick=()=>open_(e); grid.appendChild(c);
   });
 }
-function poseGroup(e,st){
-  if(!imgFor(e,st,'start')) return '';
-  const t = st==='classic';
-  return `<div class="stylegrp">
-    <div class="lbl">${t?'Classic — transparent background':'Flat — solid background'}
-      <span class="tag ${t?'':'alt'}">${t?'exclusive to RepDB':'also included'}</span></div>
-    <div class="poses">
-      <figure class="${t?'t':''}"><img src="${imgFor(e,st,'start')}" alt="${e.name_en} ${st} start"><figcaption>Start</figcaption></figure>
-      <figure class="${t?'t':''}"><img src="${imgFor(e,st,'peak')}" alt="${e.name_en} ${st} peak"><figcaption>Peak</figcaption></figure>
-    </div></div>`;
+function poses(e){
+  const f=flat(e);
+  if(f.start&&f.peak) return `<div class="poses">
+    <figure><img src="${f.start}" alt="${e.name_en} start"><figcaption>Start</figcaption></figure>
+    <figure><img src="${f.peak}" alt="${e.name_en} peak"><figcaption>Peak</figcaption></figure>
+  </div>`;
+  const u=f.main||f.start||f.peak;
+  return u?`<div class="poses single">
+    <figure><img src="${u}" alt="${e.name_en}"><figcaption>${cap(e.name_en)}</figcaption></figure>
+  </div>`:'';
 }
 function open_(e){
   const chips=[...(e.primary_muscles||[]),...(e.tags||[])].map(m=>`<span class="chip">${cap(m)}</span>`).join('');
   const steps=(e.instructions_en||[]).map(s=>`<li>${s}</li>`).join('');
   modal.innerHTML=`<h2>${e.name_en}</h2>
     <div style="color:var(--mut)">${cap(e.difficulty)} · ${cap(e.mechanic)} · ${cap(e.category)}${e.met?' · MET '+e.met:''}</div>
-    ${poseGroup(e,'classic')}${poseGroup(e,'flat')}
+    ${poses(e)}
     <p>${e.description_en||''}</p>
     <div class="chips">${chips}</div>
     ${steps?`<ol>${steps}</ol>`:''}
-    <div class="foot">Both image styles + German &amp; Spanish translations are in the JSON. Want all 400+ exercises with a commercial license? <a href="https://repdb.co">repdb.co →</a></div>`;
+    <div class="foot">German &amp; Spanish translations are in the JSON. The full paid dataset keeps growing — classic 1024&nbsp;px images, transparency &amp; animations at <a href="https://repdb.co">repdb.co →</a></div>`;
   dlg.showModal();
 }
 q.oninput=bodySel.onchange=equipSel.onchange=render;
-document.querySelectorAll('.toggle button').forEach(b=>b.onclick=()=>{
-  document.querySelectorAll('.toggle button').forEach(x=>x.classList.remove('on'));
-  b.classList.add('on'); style=b.dataset.style; render();
-});
 </script>
 </body>
 </html>
