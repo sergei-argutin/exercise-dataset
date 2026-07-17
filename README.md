@@ -109,7 +109,7 @@ Names, descriptions, instructions, and tips ship in **English, German, and Spani
 
 ## `upgrade-samples/` — paid-tier preview (evaluation only)
 
-The [`upgrade-samples/`](upgrade-samples/) folder holds a handful of **Standard-tier** assets — 1024 px classic-style WebP with true transparent backgrounds, plus one looping transparent animation — so you can judge the paid quality before buying. They are **evaluation-only**: not for production use, not for redistribution (license term 6). See them rendered on the [live viewer](https://sergei-argutin.github.io/exercise-dataset/).
+The [`upgrade-samples/`](upgrade-samples/) folder holds a handful of **Standard-tier** assets — 5 looping, transparent-background exercise animations, the same clips shown on [repdb.co](https://repdb.co) — so you can judge the paid quality before buying. They are **evaluation-only**: not for production use, not for redistribution (license term 6). See them rendered on the [live viewer](https://sergei-argutin.github.io/exercise-dataset/).
 
 ## Free vs. paid tiers
 
