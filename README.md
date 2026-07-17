@@ -124,7 +124,7 @@ The [`upgrade-samples/`](upgrade-samples/) folder holds a handful of **Standard-
 
 For perspective: **our free tier ships the resolution ExerciseDB charges $299 for.**
 
-➡️ **[repdb.co/pricing](https://repdb.co/pricing)** — one payment, no API, no rate limits, free updates.
+➡️ **[repdb.co/pricing](https://repdb.co/pricing)** — one payment, no subscription, no API, no rate limits.
 
 ## See it in real apps
 
