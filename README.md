@@ -18,7 +18,7 @@
 [![License](https://img.shields.io/badge/License-Free%20tier%20(attribution)-success?style=flat-square)](LICENSE-DATA.md)
 [![Full dataset](https://img.shields.io/badge/Full%20dataset-repdb.co-lightgrey?style=flat-square)](https://repdb.co)
 
-**[🌐 Browse the exercises live →](https://sergei-argutin.github.io/exercise-dataset/)** &nbsp;·&nbsp; **[⬆️ Paid tiers →](https://repdb.co/pricing)**
+**[⬇️ Download the 400-exercise ZIP →](https://github.com/sergei-argutin/exercise-dataset/releases/latest/download/repdb-free.zip)** &nbsp;·&nbsp; **[🌐 Browse live →](https://sergei-argutin.github.io/exercise-dataset/)** &nbsp;·&nbsp; **[⬆️ Paid tiers →](https://repdb.co/pricing)**
 
 </div>
 
