@@ -168,6 +168,9 @@
       "name_en": "Archer Pull Ups",
       "name_de": "Archer-Klimmzüge",
       "name_es": "Dominadas Arquero",
+      "description_en": "A unilateral pull-up shifting the body toward one hand while the other arm stays straight, building single-arm pulling strength.",
+      "description_de": "Ein einseitiger Klimmzug, bei dem sich der Körper zu einer Hand verlagert, während der andere Arm gestreckt bleibt — baut einarmige Zugkraft auf.",
+      "description_es": "Una dominada unilateral desplazando el cuerpo hacia una mano mientras el otro brazo permanece estirado, desarrollando fuerza de tracción a un brazo.",
       "category": "strength",
       "force_type": "pull",
       "mechanic": "compound",
@@ -217,6 +220,21 @@
         "Bájate de forma controlada hasta quedar colgado.",
         "Alterna lados en cada repetición o completa las repeticiones de un lado primero."
       ],
+      "tips_en": [
+        "Keep the straight arm fully extended and use it only as a guide.",
+        "Pull your chin toward the working hand, not straight up.",
+        "Master wide-grip pull-ups before progressing to archers."
+      ],
+      "tips_de": [
+        "Halte den gestreckten Arm voll durchgestreckt und nutze ihn nur als Führung.",
+        "Ziehe dein Kinn zur arbeitenden Hand, nicht gerade nach oben.",
+        "Beherrsche breite Klimmzüge, bevor du zu Archer-Klimmzügen übergehst."
+      ],
+      "tips_es": [
+        "Mantén el brazo estirado completamente extendido y úsalo solo como guía.",
+        "Lleva la barbilla hacia la mano que trabaja, no directamente hacia arriba.",
+        "Domina las dominadas con agarre ancho antes de progresar a las arqueras."
+      ],
       "met": 6.0,
       "images": {
         "flat": {
@@ -230,6 +248,9 @@
       "name_en": "Archer Push Ups",
       "name_de": "Archer-Liegestütze",
       "name_es": "Push-Ups Arquero",
+      "description_en": "A wide push-up lowering toward one hand while the opposite arm stays straight, loading one side at a time.",
+      "description_de": "Ein breiter Liegestütz, bei dem du dich zu einer Hand absenkst, während der andere Arm gestreckt bleibt — belastet eine Seite nach der anderen.",
+      "description_es": "Una flexión ancha bajando hacia una mano mientras el brazo contrario permanece estirado, cargando un lado cada vez.",
       "category": "strength",
       "force_type": "push",
       "mechanic": "compound",
@@ -278,6 +299,21 @@
         "Empuja de vuelta a la posición inicial.",
         "Alterna lados en cada repetición el número de veces deseado."
       ],
+      "tips_en": [
+        "Keep your hips square to the floor as you shift sideways.",
+        "Let the straight arm assist as little as possible.",
+        "Start from wide push-ups and shift a little further each session."
+      ],
+      "tips_de": [
+        "Halte die Hüfte parallel zum Boden, während du dich seitlich verlagerst.",
+        "Lass den gestreckten Arm so wenig wie möglich mithelfen.",
+        "Beginne mit breiten Liegestützen und verlagere dich jede Einheit etwas weiter."
+      ],
+      "tips_es": [
+        "Mantén las caderas paralelas al suelo mientras te desplazas hacia el lado.",
+        "Deja que el brazo estirado ayude lo menos posible.",
+        "Empieza con flexiones anchas y desplázate un poco más en cada sesión."
+      ],
       "met": 5.0,
       "images": {
         "flat": {
@@ -299,7 +335,7 @@
       "mechanic": "compound",
       "difficulty": "intermediate",
       "equipment": "dumbbell",
-      "body_part": "chest",
+      "body_part": "shoulders",
       "primary_muscles": [
         "anterior_deltoid",
         "lateral_deltoid"
@@ -1195,7 +1231,7 @@
       ],
       "tags": [
         "leg_day",
-        "warmup"
+        "warm_up"
       ],
       "variation_group": "hip-abduction",
       "is_unilateral": false,
@@ -1931,7 +1967,7 @@
       ],
       "tags": [
         "leg_day",
-        "warmup"
+        "warm_up"
       ],
       "is_unilateral": false,
       "is_bodyweight": false,
@@ -2349,21 +2385,21 @@
       "id": "banded-standing-curl",
       "name_en": "Banded Standing Curl",
       "name_de": "Banded Standing Curl",
-      "name_es": "Curl de Bíceps con Banda",
-      "description_en": "A biceps curl using a loop band, useful for travel or as a low-load arm finisher.",
-      "description_de": "Ein Bizeps-Curl mit Loop-Band, gut für unterwegs oder als Arm-Finisher mit geringer Last.",
-      "description_es": "Un curl de bíceps con banda elástica, útil para viajes o como finalizador con poca carga.",
+      "name_es": "Curl de Pierna de Pie con Banda",
+      "description_en": "A standing hamstring curl using a loop band anchored around the ankle, useful for travel or as a low-load hamstring finisher.",
+      "description_de": "Ein stehender Beincurl mit einem Loop-Band um den Knöchel, gut für unterwegs oder als Hamstring-Finisher mit geringer Last.",
+      "description_es": "Un curl femoral de pie con una banda elástica alrededor del tobillo, útil para viajes o como finalizador con poca carga para isquiotibiales.",
       "category": "strength",
       "force_type": "pull",
       "mechanic": "isolation",
       "difficulty": "beginner",
       "equipment": "loop_band",
-      "body_part": "upper_arms",
+      "body_part": "upper_legs",
       "primary_muscles": [
-        "biceps_brachii"
+        "hamstrings"
       ],
       "secondary_muscles": [
-        "brachialis"
+        "gastrocnemius"
       ],
       "goals": [
         "hypertrophy"
@@ -2373,43 +2409,43 @@
         "pull_day"
       ],
       "variation_group": "bicep-curl",
-      "is_unilateral": false,
+      "is_unilateral": true,
       "is_bodyweight": false,
       "instructions_en": [
-        "Step on a loop band with both feet and grip the top with palms facing up.",
-        "Stand tall with elbows tucked at the sides.",
-        "Curl the band up toward the shoulders, squeezing the biceps.",
-        "Lower under control to a full stretch.",
-        "Repeat for the prescribed number of repetitions."
+        "Loop a resistance band around one ankle and anchor the other end under your standing foot or a fixed point in front of you.",
+        "Stand tall, holding onto something for balance if needed, with a slight bend in the standing knee.",
+        "Curl the banded heel up and back toward your glute, keeping the thigh still.",
+        "Squeeze the hamstring at the top, then lower under control to a full stretch.",
+        "Complete all reps on one side, then switch legs."
       ],
       "instructions_de": [
-        "Stelle dich mit beiden Füßen auf ein Loop-Band und greife oben mit Untergriff.",
-        "Stehe aufrecht mit angelegten Ellenbogen.",
-        "Curle das Band zur Schulter, spanne den Bizeps an.",
-        "Senke kontrolliert in volle Streckung.",
-        "Wiederhole für die vorgegebene Anzahl an Wiederholungen."
+        "Lege ein Loop-Band um einen Knöchel und verankere das andere Ende unter dem Standfuß oder an einem festen Punkt vor dir.",
+        "Stehe aufrecht, halte dich bei Bedarf zum Gleichgewicht fest, leichte Beugung im Standbein.",
+        "Curle die Ferse mit dem Band nach oben und hinten zum Gesäß, Oberschenkel bleibt ruhig.",
+        "Spanne den Hamstring oben an, senke dann kontrolliert in volle Streckung.",
+        "Beende alle Wiederholungen auf einer Seite, dann wechsle das Bein."
       ],
       "instructions_es": [
-        "Pisa una banda elástica con ambos pies y agarra el extremo con palmas hacia arriba.",
-        "Mantente erguido con los codos pegados al cuerpo.",
-        "Sube la banda hacia los hombros contrayendo el bíceps.",
-        "Baja con control hasta el estiramiento completo.",
-        "Repite el número de repeticiones indicado."
+        "Coloca una banda elástica alrededor de un tobillo y ancla el otro extremo bajo el pie de apoyo o en un punto fijo delante de ti.",
+        "Mantente erguido, sujétate a algo si necesitas equilibrio, con ligera flexión en la pierna de apoyo.",
+        "Sube el talón con la banda hacia el glúteo, manteniendo el muslo quieto.",
+        "Contrae el isquiotibial arriba, luego baja con control hasta el estiramiento completo.",
+        "Completa todas las repeticiones de un lado y cambia de pierna."
       ],
       "tips_en": [
-        "Keep the elbows pinned at the sides.",
-        "Avoid swinging the torso for momentum.",
-        "Squeeze the biceps hard at the top."
+        "Keep the thigh stationary — only the lower leg should move.",
+        "Avoid swinging the hips to generate momentum.",
+        "Use a lighter band if you can't control the descent."
       ],
       "tips_de": [
-        "Halte die Ellenbogen am Körper.",
-        "Vermeide Schwung aus dem Oberkörper.",
-        "Drücke den Bizeps oben fest zusammen."
+        "Halte den Oberschenkel ruhig — nur der Unterschenkel bewegt sich.",
+        "Vermeide Schwung aus der Hüfte.",
+        "Nimm ein leichteres Band, wenn du die Abwärtsbewegung nicht kontrollieren kannst."
       ],
       "tips_es": [
-        "Mantén los codos pegados al cuerpo.",
-        "Evita balancear el torso para tomar impulso.",
-        "Contrae fuerte el bíceps arriba."
+        "Mantén el muslo quieto — solo se mueve la parte inferior de la pierna.",
+        "Evita balancear la cadera para tomar impulso.",
+        "Usa una banda más ligera si no puedes controlar el descenso."
       ],
       "met": 5.0,
       "images": {
@@ -3022,6 +3058,9 @@
       "name_en": "Barbell Lunge",
       "name_de": "Langhantel-Ausfallschritt",
       "name_es": "Zancada con Barra",
+      "description_en": "A forward lunge with a barbell across the upper back, training the quads and glutes one leg at a time.",
+      "description_de": "Ein Ausfallschritt nach vorn mit einer Langhantel auf dem oberen Rücken — trainiert Quadrizeps und Gesäßmuskeln einbeinig.",
+      "description_es": "Una zancada hacia delante con la barra sobre la parte alta de la espalda, entrenando cuádriceps y glúteos una pierna a la vez.",
       "category": "strength",
       "force_type": "push",
       "mechanic": "compound",
@@ -3067,6 +3106,21 @@
         "Baja la rodilla trasera hacia el suelo hasta que el muslo delantero quede paralelo.",
         "Impulsa a través del talón delantero para volver a la posición inicial.",
         "Completa las repeticiones de un lado, luego cambia."
+      ],
+      "tips_en": [
+        "Take a stride long enough that your front knee stays over your ankle.",
+        "Keep your torso upright and core braced under the bar.",
+        "Push the floor away through the front heel, not the toes."
+      ],
+      "tips_de": [
+        "Mache den Schritt so lang, dass dein vorderes Knie über dem Sprunggelenk bleibt.",
+        "Halte den Oberkörper aufrecht und den Rumpf unter der Stange angespannt.",
+        "Drücke dich über die vordere Ferse ab, nicht über die Zehen."
+      ],
+      "tips_es": [
+        "Da una zancada lo bastante larga para que la rodilla delantera quede sobre el tobillo.",
+        "Mantén el torso erguido y el core contraído bajo la barra.",
+        "Empuja el suelo con el talón delantero, no con los dedos."
       ],
       "met": 6.0,
       "images": {
@@ -3378,6 +3432,9 @@
       "name_en": "Barbell Reverse Lunge",
       "name_de": "Langhantel-Rückwärtsausfallschritt",
       "name_es": "Zancada Inversa con Barra",
+      "description_en": "A barbell lunge stepping backward instead of forward, keeping the front shin vertical while loading the quads and glutes.",
+      "description_de": "Ein Langhantel-Ausfallschritt nach hinten statt nach vorn — hält das vordere Schienbein senkrecht und belastet Quadrizeps und Gesäßmuskeln.",
+      "description_es": "Una zancada con barra dando el paso hacia atrás en lugar de hacia delante, manteniendo la tibia delantera vertical mientras carga cuádriceps y glúteos.",
       "category": "strength",
       "force_type": "push",
       "mechanic": "compound",
@@ -3423,6 +3480,21 @@
         "Baja la rodilla trasera hacia el suelo de forma controlada.",
         "Impulsa a través del talón delantero para volver a la posición inicial.",
         "Completa las repeticiones de un lado, luego cambia."
+      ],
+      "tips_en": [
+        "Step back far enough to keep your front shin close to vertical.",
+        "Lower the back knee straight down rather than leaning forward.",
+        "Keep your chest tall and hips square throughout."
+      ],
+      "tips_de": [
+        "Tritt weit genug zurück, damit dein vorderes Schienbein nahezu senkrecht bleibt.",
+        "Senke das hintere Knie gerade nach unten, statt dich nach vorn zu lehnen.",
+        "Halte die Brust aufrecht und die Hüfte gerade."
+      ],
+      "tips_es": [
+        "Da el paso atrás lo bastante largo para que la tibia delantera quede casi vertical.",
+        "Baja la rodilla trasera en línea recta en lugar de inclinarte hacia delante.",
+        "Mantén el pecho erguido y las caderas alineadas."
       ],
       "met": 6.0,
       "images": {
@@ -3750,7 +3822,7 @@
       "mechanic": "compound",
       "difficulty": "intermediate",
       "equipment": "barbell",
-      "body_part": "chest",
+      "body_part": "shoulders",
       "primary_muscles": [
         "anterior_deltoid",
         "lateral_deltoid"
@@ -4738,7 +4810,7 @@
       "force_type": "pull",
       "mechanic": "compound",
       "difficulty": "intermediate",
-      "equipment": "dumbbell",
+      "equipment": "barbell",
       "body_part": "back",
       "primary_muscles": [
         "latissimus_dorsi",
@@ -7245,6 +7317,7 @@
       "force_type": "pull",
       "mechanic": "isolation",
       "difficulty": "intermediate",
+      "equipment": "barbell",
       "body_part": "upper_arms",
       "primary_muscles": [
         "biceps_brachii"
@@ -7265,7 +7338,7 @@
       ],
       "variation_group": "bicep-curl",
       "is_unilateral": false,
-      "is_bodyweight": true,
+      "is_bodyweight": false,
       "instructions_en": [
         "Stand holding weight at thigh level with an underhand grip.",
         "Use a slight hip drive to start the curl.",
@@ -7302,7 +7375,7 @@
         "Si no puedes controlar la bajada, reduce la carga.",
         "Mantén el abdomen firme para proteger la zona lumbar."
       ],
-      "met": 3.5,
+      "met": 5.0,
       "images": {
         "flat": {
           "start": "images/flat/cheat-curl-start.webp",
@@ -10146,6 +10219,9 @@
       "name_en": "Diamond Push Ups",
       "name_de": "Diamant-Push-Ups",
       "name_es": "Flexiones en Diamante",
+      "description_en": "A close-hand push-up with thumbs and index fingers forming a diamond, shifting the emphasis onto the triceps.",
+      "description_de": "Ein enger Liegestütz, bei dem Daumen und Zeigefinger eine Raute formen — verlagert die Belastung auf den Trizeps.",
+      "description_es": "Una flexión con las manos juntas formando un diamante con pulgares e índices, trasladando el énfasis a los tríceps.",
       "category": "strength",
       "force_type": "push",
       "mechanic": "compound",
@@ -10192,6 +10268,21 @@
         "Baja el pecho hacia las manos.",
         "Empuja hacia arriba para extender los brazos.",
         "Repite el número de repeticiones deseado."
+      ],
+      "tips_en": [
+        "Keep your elbows tracking back along your sides, not flared out.",
+        "Hold your body in a rigid straight line from head to heels.",
+        "Lower with control until your chest reaches your hands."
+      ],
+      "tips_de": [
+        "Führe die Ellbogen eng am Körper nach hinten, nicht nach außen.",
+        "Halte den Körper in einer festen geraden Linie von Kopf bis Fersen.",
+        "Senke dich kontrolliert ab, bis die Brust deine Hände erreicht."
+      ],
+      "tips_es": [
+        "Lleva los codos hacia atrás pegados a los costados, sin abrirlos.",
+        "Mantén el cuerpo en una línea recta y rígida de la cabeza a los talones.",
+        "Baja con control hasta que el pecho llegue a las manos."
       ],
       "met": 5.0,
       "images": {
@@ -10308,7 +10399,7 @@
         "arm_day",
         "pull_day"
       ],
-      "variation_group": "biceps-curl",
+      "variation_group": "bicep-curl",
       "is_unilateral": false,
       "is_bodyweight": false,
       "instructions_en": [
@@ -11120,6 +11211,9 @@
       "name_en": "Dragon Flag",
       "name_de": "Dragon Flag",
       "name_es": "Dragon Flag",
+      "description_en": "A demanding core hold performed on a bench: gripping behind your head, you raise your entire body into a rigid straight line supported only by your upper back.",
+      "description_de": "Eine anspruchsvolle Rumpfübung auf der Bank: Du greifst hinter deinem Kopf und hebst den ganzen Körper in eine starre gerade Linie, die nur vom oberen Rücken getragen wird.",
+      "description_es": "Un exigente ejercicio de core en banco: agarrando detrás de la cabeza, elevas todo el cuerpo en una línea recta y rígida apoyada solo en la parte alta de la espalda.",
       "category": "strength",
       "force_type": "push",
       "mechanic": "compound",
@@ -11167,6 +11261,21 @@
         "Mantén el cuerpo rígido en línea recta.",
         "Baja el cuerpo de forma controlada hasta quedar casi horizontal.",
         "Sube de vuelta y repite."
+      ],
+      "tips_en": [
+        "Keep your body rigid from shoulders to toes and move only at the shoulders.",
+        "Lower as slowly as you can — the eccentric is the exercise.",
+        "Start with tucked or single-leg progressions before the full flag."
+      ],
+      "tips_de": [
+        "Halte den Körper von den Schultern bis zu den Zehen starr und bewege dich nur aus den Schultern.",
+        "Senke dich so langsam wie möglich ab — die exzentrische Phase ist die Übung.",
+        "Beginne mit angezogenen Beinen oder einbeinigen Progressionen, bevor du die volle Flag versuchst."
+      ],
+      "tips_es": [
+        "Mantén el cuerpo rígido de hombros a pies y muévete solo desde los hombros.",
+        "Baja tan despacio como puedas: la fase excéntrica es el ejercicio.",
+        "Empieza con progresiones con piernas recogidas o a una pierna antes del dragon flag completo."
       ],
       "met": 5.0,
       "images": {
@@ -11643,6 +11752,9 @@
       "name_en": "Dumbbell Front Squat",
       "name_de": "Kurzhantel Front-Kniebeuge",
       "name_es": "Sentadilla Frontal con Mancuernas",
+      "description_en": "A squat holding dumbbells racked at the shoulders, keeping the torso upright and emphasizing the quads.",
+      "description_de": "Eine Kniebeuge mit Kurzhanteln auf den Schultern — hält den Oberkörper aufrecht und betont den Quadrizeps.",
+      "description_es": "Una sentadilla sosteniendo mancuernas apoyadas en los hombros, manteniendo el torso erguido y enfatizando los cuádriceps.",
       "category": "strength",
       "force_type": "push",
       "mechanic": "compound",
@@ -11694,6 +11806,21 @@
         "Empuja a través de los talones para ponerte de pie.",
         "Mantén la columna en posición neutra durante todo el movimiento.",
         "Repite el número de repeticiones deseado."
+      ],
+      "tips_en": [
+        "Keep your elbows high so the dumbbells stay racked on your shoulders.",
+        "Sit down between your hips rather than folding forward.",
+        "Drive through the whole foot and keep your heels down."
+      ],
+      "tips_de": [
+        "Halte die Ellbogen hoch, damit die Kurzhanteln auf den Schultern liegen bleiben.",
+        "Setze dich zwischen deine Hüften, statt nach vorn zu klappen.",
+        "Drücke über den ganzen Fuß und halte die Fersen am Boden."
+      ],
+      "tips_es": [
+        "Mantén los codos altos para que las mancuernas queden apoyadas en los hombros.",
+        "Siéntate entre las caderas en lugar de plegarte hacia delante.",
+        "Empuja con todo el pie y mantén los talones en el suelo."
       ],
       "met": 6.0,
       "images": {
@@ -12680,7 +12807,7 @@
         "arm_day",
         "grip_focus"
       ],
-      "is_unilateral": false,
+      "is_unilateral": true,
       "is_bodyweight": false,
       "instructions_en": [
         "Sit on a bench with the forearm resting on the thigh, palm up.",
@@ -13333,6 +13460,9 @@
       "name_en": "EZ Bar Spider Curl",
       "name_de": "SZ-Stangen Spider Curl",
       "name_es": "Spider Curl con Barra Z",
+      "description_en": "A chest-supported curl over an incline bench with an EZ bar, isolating the biceps with strict form.",
+      "description_de": "Ein brustgestützter Curl über der Schrägbank mit der SZ-Stange — isoliert den Bizeps mit strikter Technik.",
+      "description_es": "Un curl con el pecho apoyado sobre un banco inclinado usando barra Z, aislando el bíceps con técnica estricta.",
       "category": "strength",
       "force_type": "pull",
       "mechanic": "isolation",
@@ -13382,6 +13512,21 @@
         "Aprieta los bíceps en la parte alta del movimiento.",
         "Baja la barra de forma controlada.",
         "Repite el número de repeticiones deseado."
+      ],
+      "tips_en": [
+        "Let your arms hang straight down and keep the upper arms fixed.",
+        "Curl with the biceps only — the bench removes any excuse to swing.",
+        "Lower to a full stretch before starting the next rep."
+      ],
+      "tips_de": [
+        "Lass die Arme senkrecht hängen und halte die Oberarme fixiert.",
+        "Curle nur mit dem Bizeps — die Bank nimmt dir jede Ausrede zum Schwungholen.",
+        "Senke die Stange bis zur vollen Dehnung, bevor du die nächste Wiederholung beginnst."
+      ],
+      "tips_es": [
+        "Deja los brazos colgando verticales y mantén fijos los brazos superiores.",
+        "Haz el curl solo con el bíceps: el banco elimina cualquier excusa para balancearte.",
+        "Baja hasta el estiramiento completo antes de empezar la siguiente repetición."
       ],
       "met": 5.0,
       "images": {
@@ -13773,6 +13918,9 @@
       "name_en": "Flutter Kicks",
       "name_de": "Flutter Kicks",
       "name_es": "Flutter Kicks",
+      "description_en": "A supine core drill alternating small up-and-down leg kicks while the lower back stays pressed to the floor.",
+      "description_de": "Eine Rumpfübung in Rückenlage mit kleinen, wechselnden Beinbewegungen auf und ab, während der untere Rücken auf den Boden gedrückt bleibt.",
+      "description_es": "Un ejercicio de core tumbado boca arriba alternando pequeñas patadas arriba y abajo mientras la zona lumbar permanece pegada al suelo.",
       "category": "strength",
       "force_type": "push",
       "mechanic": "compound",
@@ -13821,6 +13969,21 @@
         "Alterna las piernas arriba y abajo en un rango pequeño.",
         "Mantén el core contraído y la zona lumbar presionada contra el suelo.",
         "Continúa durante el tiempo o las repeticiones deseadas."
+      ],
+      "tips_en": [
+        "Press your lower back into the floor for the whole set.",
+        "Keep the kicks small and steady rather than big and wild.",
+        "Raise your legs higher if you feel your lower back arching."
+      ],
+      "tips_de": [
+        "Drücke den unteren Rücken während des ganzen Satzes in den Boden.",
+        "Halte die Kicks klein und gleichmäßig statt groß und unkontrolliert.",
+        "Hebe die Beine höher, wenn dein unterer Rücken ins Hohlkreuz geht."
+      ],
+      "tips_es": [
+        "Presiona la zona lumbar contra el suelo durante toda la serie.",
+        "Mantén las patadas pequeñas y constantes en lugar de grandes y descontroladas.",
+        "Eleva más las piernas si notas que la zona lumbar se arquea."
       ],
       "met": 5.0,
       "images": {
@@ -14364,6 +14527,9 @@
       "name_en": "Hack Squat Calf Raise",
       "name_de": "Hack Squat Wadenheben",
       "name_es": "Elevación de Talones en Máquina Hack Squat",
+      "description_en": "A calf raise performed in the hack squat machine, loading the calves heavily without balancing a bar.",
+      "description_de": "Ein Wadenheben in der Hackenschmidt-Maschine — belastet die Waden schwer, ohne eine Stange balancieren zu müssen.",
+      "description_es": "Una elevación de talones en la máquina de sentadilla hack, cargando los gemelos con mucho peso sin tener que equilibrar una barra.",
       "category": "strength",
       "force_type": "push",
       "mechanic": "isolation",
@@ -14409,6 +14575,21 @@
         "Empuja con los metatarsos para elevar los talones.",
         "Baja los talones por debajo de la plataforma para hacer el estiramiento.",
         "Repite el número de repeticiones deseado."
+      ],
+      "tips_en": [
+        "Rise as high onto the balls of your feet as possible.",
+        "Pause in the bottom stretch instead of bouncing out of it.",
+        "Keep your knees straight but not locked to keep tension on the calves."
+      ],
+      "tips_de": [
+        "Drücke dich so hoch wie möglich auf die Fußballen.",
+        "Halte die Dehnung unten kurz, statt aus ihr herauszufedern.",
+        "Halte die Knie gestreckt, aber nicht durchgedrückt, damit die Spannung auf den Waden bleibt."
+      ],
+      "tips_es": [
+        "Sube tan alto como puedas sobre las puntas de los pies.",
+        "Haz una pausa en el estiramiento inferior en lugar de rebotar.",
+        "Mantén las rodillas rectas pero sin bloquear para conservar la tensión en los gemelos."
       ],
       "met": 5.0,
       "images": {
@@ -14498,11 +14679,14 @@
       "name_en": "Handstand Push Ups",
       "name_de": "Handstand Push-Ups",
       "name_es": "Flexiones en Pino",
+      "description_en": "An inverted press against a wall, lowering the head to the floor and pressing back up to a full handstand.",
+      "description_de": "Ein Drücken über Kopf im Handstand an der Wand: Der Kopf wird zum Boden abgesenkt und der Körper zurück in den vollen Handstand gedrückt.",
+      "description_es": "Un empuje invertido contra la pared, bajando la cabeza hacia el suelo y empujando de vuelta hasta el pino completo.",
       "category": "strength",
       "force_type": "push",
       "mechanic": "compound",
       "difficulty": "advanced",
-      "body_part": "chest",
+      "body_part": "shoulders",
       "primary_muscles": [
         "anterior_deltoid",
         "triceps_brachii"
@@ -14547,6 +14731,21 @@
         "Detente justo antes de que la cabeza toque el suelo.",
         "Empuja con las manos para volver al pino completo.",
         "Repite el número de repeticiones deseado."
+      ],
+      "tips_en": [
+        "Keep your elbows at roughly 45 degrees rather than flared wide.",
+        "Brace your core so your back does not arch away from the wall.",
+        "Build up through pike push-ups and partial ranges first."
+      ],
+      "tips_de": [
+        "Halte die Ellbogen in etwa 45 Grad, statt sie weit nach außen zu drehen.",
+        "Spanne den Rumpf an, damit dein Rücken nicht von der Wand weg ins Hohlkreuz fällt.",
+        "Baue dich über Pike-Liegestütze und Teilwiederholungen auf."
+      ],
+      "tips_es": [
+        "Mantén los codos a unos 45 grados en lugar de abrirlos por completo.",
+        "Contrae el core para que la espalda no se arquee alejándose de la pared.",
+        "Progresa primero con flexiones pike y rangos parciales."
       ],
       "met": 5.0,
       "images": {
@@ -15020,6 +15219,9 @@
       "name_en": "Hex Bar Deadlift",
       "name_de": "Hex-Bar Deadlift",
       "name_es": "Peso Muerto con Barra Hexagonal",
+      "description_en": "A deadlift standing inside a hex (trap) bar, keeping the load centered for a more upright, back-friendly pull.",
+      "description_de": "Ein Kreuzheben in der Hexbar (Trap Bar) — die zentrierte Last erlaubt einen aufrechteren, rückenfreundlicheren Zug.",
+      "description_es": "Un peso muerto de pie dentro de una barra hexagonal, manteniendo la carga centrada para un tirón más erguido y amable con la espalda.",
       "category": "strength",
       "force_type": "pull",
       "mechanic": "compound",
@@ -15070,6 +15272,21 @@
         "Empuja con los talones y extiende caderas y rodillas para ponerte erguido.",
         "Bloquea en la parte alta con los hombros hacia atrás.",
         "Baja la barra al suelo de forma controlada."
+      ],
+      "tips_en": [
+        "Keep your chest up and back flat as you set your grip.",
+        "Push the floor away rather than yanking the bar with your back.",
+        "Stand fully upright at the top without leaning back."
+      ],
+      "tips_de": [
+        "Halte die Brust oben und den Rücken flach, während du den Griff einstellst.",
+        "Drücke den Boden weg, statt die Stange mit dem Rücken hochzureißen.",
+        "Richte dich oben ganz auf, ohne dich zurückzulehnen."
+      ],
+      "tips_es": [
+        "Mantén el pecho arriba y la espalda plana mientras ajustas el agarre.",
+        "Empuja el suelo en lugar de tirar de la barra con la espalda.",
+        "Ponte completamente erguido arriba sin inclinarte hacia atrás."
       ],
       "met": 6.0,
       "images": {
@@ -15237,9 +15454,9 @@
       "name_en": "Hip Adduction",
       "name_de": "Hüftadduktion",
       "name_es": "Aducción de cadera",
-      "description_en": "A side-lying adduction exercise raising the bottom leg to strengthen the inner thigh.",
-      "description_de": "Eine in Seitenlage ausgeführte Übung, bei der das untere Bein angehoben wird, um die Innenseite des Oberschenkels zu kräftigen.",
-      "description_es": "Un ejercicio de aducción de cadera realizado tumbado de lado, elevando la pierna inferior para trabajar el interior del muslo.",
+      "description_en": "A machine exercise pressing the legs together against resistance, isolating and strengthening the inner-thigh adductors.",
+      "description_de": "Eine Maschinenübung, bei der die Beine gegen Widerstand zusammengedrückt werden — isoliert und stärkt die Adduktoren der Oberschenkelinnenseite.",
+      "description_es": "Un ejercicio en máquina apretando las piernas una contra otra frente a la resistencia, aislando y fortaleciendo los aductores de la cara interna del muslo.",
       "category": "strength",
       "force_type": "pull",
       "mechanic": "isolation",
@@ -15247,10 +15464,7 @@
       "equipment": "hip_adduction_machine",
       "body_part": "upper_legs",
       "primary_muscles": [
-        "hip_flexors"
-      ],
-      "secondary_muscles": [
-        "gluteus_medius"
+        "adductors"
       ],
       "goals": [
         "hypertrophy"
@@ -15265,43 +15479,43 @@
       "is_unilateral": false,
       "is_bodyweight": false,
       "instructions_en": [
-        "Lie on your side with your bottom leg straight.",
-        "Cross your top leg over and place the foot on the floor in front.",
-        "Raise your bottom leg up toward the ceiling.",
-        "Focus on squeezing your inner thigh at the top.",
-        "Lower the leg back down with control.",
-        "Complete reps on one side, then switch."
+        "Sit on the hip adduction machine with your back against the pad.",
+        "Place your legs against the pads with the machine set to a comfortable stretch.",
+        "Squeeze your legs together until the pads meet in the middle.",
+        "Hold the squeeze briefly in the fully closed position.",
+        "Let your legs open back out under control to the start.",
+        "Repeat for the desired number of reps."
       ],
       "instructions_de": [
-        "Leg dich auf die Seite, das untere Bein gestreckt.",
-        "Schlage das obere Bein über das untere und stelle den Fuß vor dir auf dem Boden ab.",
-        "Hebe das untere Bein zur Decke.",
-        "Spanne den inneren Oberschenkel oben bewusst an.",
-        "Senke das Bein kontrolliert wieder ab.",
-        "Absolviere die Wiederholungen auf einer Seite, dann wechseln."
+        "Setze dich an die Adduktoren-Maschine, mit dem Rücken fest am Polster.",
+        "Lege die Beine an die Polster; stelle die Maschine auf eine angenehme Dehnung ein.",
+        "Drücke die Beine zusammen, bis sich die Polster in der Mitte treffen.",
+        "Halte die Spannung kurz in der ganz geschlossenen Position.",
+        "Lass die Beine kontrolliert wieder in die Ausgangsposition öffnen.",
+        "Wiederhole für die gewünschte Anzahl an Wiederholungen."
       ],
       "instructions_es": [
-        "Acuéstate de lado con la pierna inferior estirada.",
-        "Cruza la pierna superior y coloca el pie en el suelo por delante.",
-        "Levanta la pierna inferior hacia el techo.",
-        "Concéntrate en apretar el interior del muslo en la parte superior.",
-        "Baja la pierna de nuevo con control.",
-        "Completa las repeticiones en un lado y luego cambia."
+        "Siéntate en la máquina de aducción de cadera con la espalda contra el respaldo.",
+        "Coloca las piernas contra las almohadillas con la máquina ajustada a un estiramiento cómodo.",
+        "Aprieta las piernas hasta que las almohadillas se junten en el centro.",
+        "Mantén brevemente la contracción en la posición completamente cerrada.",
+        "Deja que las piernas se abran de vuelta con control hasta el inicio.",
+        "Repite el número deseado de repeticiones."
       ],
       "tips_en": [
-        "Keep your hips stacked vertically and avoid rolling backward.",
-        "Lift through a small range rather than swinging the leg.",
-        "Keep your torso still so only the bottom leg moves."
+        "Choose a start width that stretches without straining your groin.",
+        "Move through the whole range at an even, controlled speed.",
+        "Do not let the weight stack slam down as your legs open back out."
       ],
       "tips_de": [
-        "Halte Hüfte und Oberkörper stabil, ohne nach hinten zu kippen.",
-        "Arbeite langsam und ohne Schwung aus der Hüfte.",
-        "Hebe das Bein nur so weit, wie es ohne Ausweichbewegung gelingt."
+        "Wähle eine Startbreite, die dehnt, ohne die Leiste zu überlasten.",
+        "Bewege dich über den ganzen Bewegungsumfang gleichmäßig und kontrolliert.",
+        "Lass den Gewichtsblock beim Öffnen der Beine nicht aufschlagen."
       ],
       "tips_es": [
-        "Mantén las caderas apiladas, sin rodar hacia atrás.",
-        "Mueve la pierna desde la cadera, con el torso quieto.",
-        "Apoya la cabeza en el brazo de abajo para relajar el cuello."
+        "Elige una apertura inicial que estire sin forzar la ingle.",
+        "Recorre todo el rango a una velocidad uniforme y controlada.",
+        "No dejes que la placa de peso golpee al abrir las piernas."
       ],
       "met": 5.0,
       "images": {
@@ -17034,7 +17248,7 @@
         "arm_day",
         "pull_day"
       ],
-      "variation_group": "biceps-curl",
+      "variation_group": "bicep-curl",
       "is_unilateral": true,
       "is_bodyweight": false,
       "instructions_en": [
@@ -18674,7 +18888,7 @@
       "force_type": "static",
       "mechanic": "compound",
       "difficulty": "advanced",
-      "equipment": "pull_up_bar",
+      "equipment": "dip_station",
       "body_part": "full_body",
       "primary_muscles": [
         "hip_flexors",
@@ -19206,6 +19420,9 @@
       "name_en": "Lunge",
       "name_de": "Ausfallschritt",
       "name_es": "Zancada",
+      "description_en": "A bodyweight forward lunge stepping into a long stride, training the quads, glutes, and balance one leg at a time.",
+      "description_de": "Ein Ausfallschritt nach vorn mit dem eigenen Körpergewicht — trainiert Quadrizeps, Gesäßmuskeln und Gleichgewicht einbeinig.",
+      "description_es": "Una zancada hacia delante con el peso corporal, entrenando cuádriceps, glúteos y equilibrio una pierna a la vez.",
       "category": "strength",
       "force_type": "push",
       "mechanic": "compound",
@@ -19253,6 +19470,21 @@
         "Baja la rodilla trasera hacia el suelo hasta que ambas rodillas formen ángulos de 90 grados.",
         "Empuja con el talón delantero para volver a la posición de pie.",
         "Completa las repeticiones de un lado y luego cambia."
+      ],
+      "tips_en": [
+        "Take a stride long enough for both knees to reach about 90 degrees.",
+        "Keep your torso upright and eyes forward.",
+        "Push through the front heel to return in one strong motion."
+      ],
+      "tips_de": [
+        "Mache den Schritt so lang, dass beide Knie etwa 90 Grad erreichen.",
+        "Halte den Oberkörper aufrecht und den Blick nach vorn.",
+        "Drücke dich über die vordere Ferse in einer kraftvollen Bewegung zurück."
+      ],
+      "tips_es": [
+        "Da una zancada lo bastante larga para que ambas rodillas lleguen a unos 90 grados.",
+        "Mantén el torso erguido y la mirada al frente.",
+        "Empuja con el talón delantero para volver en un solo movimiento potente."
       ],
       "met": 5.0,
       "images": {
@@ -19950,6 +20182,9 @@
       "name_en": "Muscle Ups",
       "name_de": "Muscle-Up",
       "name_es": "Muscle-Ups",
+      "description_en": "An advanced bar movement combining an explosive pull-up with a dip transition to finish above the bar.",
+      "description_de": "Eine fortgeschrittene Übung an der Stange, die einen explosiven Klimmzug mit einem Übergang in den Dip über der Stange verbindet.",
+      "description_es": "Un movimiento avanzado en barra que combina una dominada explosiva con una transición a fondo para terminar por encima de la barra.",
       "category": "strength",
       "force_type": "pull",
       "mechanic": "compound",
@@ -19999,6 +20234,21 @@
         "Empuja el cuerpo hacia arriba hasta que los brazos queden completamente extendidos sobre la barra.",
         "Baja con control por el mismo recorrido.",
         "Repite el número de repeticiones deseado."
+      ],
+      "tips_en": [
+        "Use a false grip so your wrists are already over the bar for the transition.",
+        "Pull explosively toward your sternum, not just your chin.",
+        "Drill the transition on low rings or with bands before full reps."
+      ],
+      "tips_de": [
+        "Nutze den falschen Griff, damit deine Handgelenke für den Übergang schon über der Stange sind.",
+        "Ziehe explosiv Richtung Brustbein, nicht nur bis zum Kinn.",
+        "Übe den Übergang an tiefen Ringen oder mit Bändern, bevor du volle Wiederholungen machst."
+      ],
+      "tips_es": [
+        "Usa agarre falso para que las muñecas ya estén sobre la barra en la transición.",
+        "Tira explosivamente hacia el esternón, no solo hasta la barbilla.",
+        "Practica la transición en anillas bajas o con bandas antes de hacer repeticiones completas."
       ],
       "met": 6.0,
       "images": {
@@ -20179,12 +20429,15 @@
       "name_en": "Nordic Hamstring Curl",
       "name_de": "Nordic Hamstring Curl",
       "name_es": "Curl Nórdico de Isquiotibiales",
+      "description_en": "A knee-flexion exercise lowering the torso forward from a kneeling position, working the hamstrings eccentrically.",
+      "description_de": "Eine Kniebeugung, bei der der Oberkörper aus dem Kniestand langsam nach vorn abgesenkt wird — trainiert die Beinbeuger exzentrisch.",
+      "description_es": "Un ejercicio de flexión de rodilla bajando el torso hacia delante desde una posición arrodillada, trabajando los isquiotibiales de forma excéntrica.",
       "category": "strength",
       "force_type": "pull",
       "mechanic": "isolation",
       "difficulty": "advanced",
       "equipment": "glute_ham_developer",
-      "body_part": "upper_arms",
+      "body_part": "upper_legs",
       "primary_muscles": [
         "hamstrings"
       ],
@@ -20227,6 +20480,21 @@
         "Amortigua la caída con las manos justo antes de tocar el suelo.",
         "Empuja con las manos para volver y tírate hacia la posición inicial.",
         "Repite el número de repeticiones deseado."
+      ],
+      "tips_en": [
+        "Lower as slowly as possible — the eccentric is the point.",
+        "Keep your hips extended; do not fold at the waist.",
+        "Catch yourself with your hands and push off lightly while building strength."
+      ],
+      "tips_de": [
+        "Senke dich so langsam wie möglich ab — die exzentrische Phase ist der Sinn der Übung.",
+        "Halte die Hüfte gestreckt und knicke nicht in der Taille ein.",
+        "Fange dich mit den Händen ab und drücke dich leicht ab, solange du Kraft aufbaust."
+      ],
+      "tips_es": [
+        "Baja tan despacio como sea posible: la fase excéntrica es el objetivo.",
+        "Mantén las caderas extendidas; no te dobles por la cintura.",
+        "Frénate con las manos y empuja ligeramente mientras ganas fuerza."
       ],
       "met": 5.0,
       "images": {
@@ -20900,7 +21168,7 @@
       "mechanic": "compound",
       "difficulty": "intermediate",
       "equipment": "kettlebell",
-      "body_part": "chest",
+      "body_part": "shoulders",
       "primary_muscles": [
         "anterior_deltoid"
       ],
@@ -21390,7 +21658,6 @@
       "secondary_muscles": [
         "biceps_brachii",
         "posterior_deltoid",
-        "rear_deltoid",
         "rhomboids"
       ],
       "goals": [
@@ -21622,6 +21889,9 @@
       "name_en": "Overhead Squat",
       "name_de": "Überkopf-Kniebeuge",
       "name_es": "Sentadilla con Barra en Alto",
+      "description_en": "A squat with a barbell locked out overhead in a wide snatch grip, demanding mobility, stability, and a strong core.",
+      "description_de": "Eine Kniebeuge mit der Langhantel über Kopf im breiten Reißgriff — verlangt Mobilität, Stabilität und einen starken Rumpf.",
+      "description_es": "Una sentadilla con la barra bloqueada por encima de la cabeza con agarre ancho de arrancada, que exige movilidad, estabilidad y un core fuerte.",
       "category": "strength",
       "force_type": "push",
       "mechanic": "compound",
@@ -21667,6 +21937,21 @@
         "Mantén la barra directamente sobre el punto medio de los pies.",
         "Impulsa a través de los talones para volver a ponerte de pie.",
         "Repite el número de repeticiones deseado."
+      ],
+      "tips_en": [
+        "Keep your armpits facing forward to lock the bar in place.",
+        "Keep the bar over mid-foot with a more upright torso than a back squat.",
+        "Work on shoulder and ankle mobility before adding load."
+      ],
+      "tips_de": [
+        "Drehe die Achseln nach vorn, um die Stange zu fixieren.",
+        "Halte die Stange über der Fußmitte, mit aufrechterem Oberkörper als bei der Kniebeuge.",
+        "Arbeite an Schulter- und Sprunggelenksmobilität, bevor du Gewicht auflegst."
+      ],
+      "tips_es": [
+        "Gira las axilas hacia delante para fijar la barra en su sitio.",
+        "Mantén la barra sobre el mediopié, con el torso más erguido que en una sentadilla trasera.",
+        "Trabaja la movilidad de hombros y tobillos antes de añadir peso."
       ],
       "met": 6.0,
       "images": {
@@ -22238,11 +22523,14 @@
       "name_en": "Pike Push Ups",
       "name_de": "Pike Push-Ups",
       "name_es": "Flexiones en Pica",
+      "description_en": "A push-up performed with hips high in a pike position, pressing at a steep angle to load the shoulders.",
+      "description_de": "Ein Liegestütz mit hoch aufgestellter Hüfte in der Pike-Position — drückt in steilem Winkel und belastet die Schultern.",
+      "description_es": "Una flexión realizada con las caderas elevadas en posición de pica, empujando en un ángulo pronunciado para cargar los hombros.",
       "category": "strength",
       "force_type": "push",
       "mechanic": "compound",
       "difficulty": "intermediate",
-      "body_part": "chest",
+      "body_part": "shoulders",
       "primary_muscles": [
         "anterior_deltoid",
         "lateral_deltoid"
@@ -22287,6 +22575,21 @@
         "Mantén las caderas altas durante todo el ejercicio.",
         "Empuja hacia arriba hasta que los brazos queden completamente extendidos.",
         "Repite el número de repeticiones deseado."
+      ],
+      "tips_en": [
+        "The higher your hips, the more the shoulders work.",
+        "Lower your head toward a spot slightly ahead of your hands.",
+        "Walk your feet closer to your hands to progress toward handstand push-ups."
+      ],
+      "tips_de": [
+        "Je höher die Hüfte, desto stärker arbeiten die Schultern.",
+        "Senke den Kopf auf einen Punkt knapp vor deinen Händen ab.",
+        "Gehe mit den Füßen näher an die Hände, um dich Richtung Handstand-Liegestütz zu steigern."
+      ],
+      "tips_es": [
+        "Cuanto más altas las caderas, más trabajan los hombros.",
+        "Baja la cabeza hacia un punto ligeramente por delante de las manos.",
+        "Acerca los pies a las manos para progresar hacia las flexiones en pino."
       ],
       "met": 5.0,
       "images": {
@@ -22675,6 +22978,9 @@
       "name_en": "Pseudo Planche Push Ups",
       "name_de": "Pseudo Planche Push-Ups",
       "name_es": "Push-Ups de Pseudo Plancha",
+      "description_en": "A push-up with hands turned back and shoulders leaned far past the wrists, mimicking planche loading.",
+      "description_de": "Ein Liegestütz mit nach hinten gedrehten Händen und weit über die Handgelenke nach vorn gelehnten Schultern — imitiert die Planche-Belastung.",
+      "description_es": "Una flexión con las manos giradas hacia atrás y los hombros inclinados muy por delante de las muñecas, imitando la carga de la plancha.",
       "category": "strength",
       "force_type": "push",
       "mechanic": "compound",
@@ -22724,6 +23030,21 @@
         "Mantén el cuerpo en línea recta.",
         "Empuja hacia arriba manteniendo la inclinación hacia adelante.",
         "Repite el número deseado de repeticiones."
+      ],
+      "tips_en": [
+        "The further you lean forward, the harder each rep becomes.",
+        "Keep your elbows close to your body as you lower.",
+        "Keep your shoulder blades protracted and your body rigid."
+      ],
+      "tips_de": [
+        "Je weiter du dich nach vorn lehnst, desto schwerer wird jede Wiederholung.",
+        "Halte die Ellbogen beim Absenken eng am Körper.",
+        "Halte die Schulterblätter nach vorn gezogen und den Körper starr."
+      ],
+      "tips_es": [
+        "Cuanto más te inclines hacia delante, más difícil será cada repetición.",
+        "Mantén los codos pegados al cuerpo al bajar.",
+        "Mantén las escápulas protraídas y el cuerpo rígido."
       ],
       "met": 5.0,
       "images": {
@@ -25074,10 +25395,7 @@
       "difficulty": "intermediate",
       "body_part": "upper_legs",
       "primary_muscles": [
-        "hip_flexors"
-      ],
-      "secondary_muscles": [
-        "gluteus_medius"
+        "adductors"
       ],
       "goals": [
         "hypertrophy"
@@ -25529,7 +25847,7 @@
       "name_en": "Single Leg Romanian Deadlift",
       "name_de": "Einbeiniges Romanian Deadlift",
       "name_es": "Peso Muerto Rumano a Una Pierna",
-      "description_en": "A single-leg hip hinge with a barbell, training the hamstrings and glutes while challenging balance and hip stability.",
+      "description_en": "A single-leg hip hinge with dumbbells, training the hamstrings and glutes while challenging balance and hip stability.",
       "description_de": "Eine einbeinige Variante des Romanian Deadlifts mit Kurzhanteln, die Gesäß und Beinbeuger trainiert und das Gleichgewicht zusätzlich fordert.",
       "description_es": "Un peso muerto rumano a una pierna con mancuernas, que trabaja isquiotibiales y glúteos mientras exige equilibrio y estabilidad de cadera.",
       "category": "strength",
@@ -26702,6 +27020,9 @@
       "name_en": "Spider Curl",
       "name_de": "Spider Curl",
       "name_es": "Curl Araña",
+      "description_en": "A curl lying face-down on an incline bench with arms hanging vertical, isolating the biceps through a strict range.",
+      "description_de": "Ein Curl in Bauchlage auf der Schrägbank mit senkrecht hängenden Armen — isoliert den Bizeps über einen strikten Bewegungsumfang.",
+      "description_es": "Un curl tumbado boca abajo en banco inclinado con los brazos colgando verticales, aislando el bíceps en un rango estricto.",
       "category": "strength",
       "force_type": "pull",
       "mechanic": "isolation",
@@ -26750,6 +27071,21 @@
         "Aprieta fuerte los bíceps en la parte superior.",
         "Baja las mancuernas de forma controlada hasta la extensión completa.",
         "Repite el número de repeticiones deseado."
+      ],
+      "tips_en": [
+        "Keep your chest glued to the pad for the whole set.",
+        "Squeeze at the top without letting the elbows drift backward.",
+        "Use the full range — the stretch at the bottom is half the value."
+      ],
+      "tips_de": [
+        "Halte die Brust während des ganzen Satzes fest am Polster.",
+        "Spanne oben an, ohne die Ellbogen nach hinten wandern zu lassen.",
+        "Nutze den vollen Bewegungsumfang — die Dehnung unten ist die halbe Miete."
+      ],
+      "tips_es": [
+        "Mantén el pecho pegado al respaldo durante toda la serie.",
+        "Aprieta arriba sin dejar que los codos se desplacen hacia atrás.",
+        "Usa el rango completo: el estiramiento abajo es la mitad del beneficio."
       ],
       "met": 5.0,
       "images": {
@@ -26841,6 +27177,9 @@
       "name_en": "Split Squat",
       "name_de": "Ausfallschritt-Kniebeuge",
       "name_es": "Sentadilla en Tijera",
+      "description_en": "A stationary lunge lowering straight down in a split stance, building single-leg strength without a step.",
+      "description_de": "Ein stationärer Ausfallschritt, bei dem du dich in der Schrittstellung gerade nach unten absenkst — baut einbeinige Kraft ohne Schritt auf.",
+      "description_es": "Una zancada estática bajando en línea recta con las piernas en tijera, desarrollando fuerza unilateral sin dar el paso.",
       "category": "strength",
       "force_type": "push",
       "mechanic": "compound",
@@ -26890,6 +27229,21 @@
         "Detente cuando la rodilla trasera esté justo por encima del suelo.",
         "Empuja a través del talón delantero para volver al inicio.",
         "Completa las repeticiones de un lado y luego cambia."
+      ],
+      "tips_en": [
+        "Lower straight down rather than lunging forward.",
+        "Keep most of your weight over the front foot.",
+        "Keep the front heel planted throughout the rep."
+      ],
+      "tips_de": [
+        "Senke dich gerade nach unten ab, statt nach vorn auszufallen.",
+        "Halte den Großteil deines Gewichts über dem vorderen Fuß.",
+        "Lass die vordere Ferse während der ganzen Wiederholung am Boden."
+      ],
+      "tips_es": [
+        "Baja en línea recta en lugar de lanzarte hacia delante.",
+        "Mantén la mayor parte del peso sobre el pie delantero.",
+        "Mantén el talón delantero apoyado durante toda la repetición."
       ],
       "met": 6.0,
       "images": {
@@ -27445,6 +27799,9 @@
       "name_en": "Stiff Leg Deadlift",
       "name_de": "Steifbeiniges Kreuzheben",
       "name_es": "Peso Muerto con Piernas Rígidas",
+      "description_en": "A hip hinge with nearly straight legs, lowering the bar along the thighs to stretch and load the hamstrings.",
+      "description_de": "Eine Hüftbeuge mit fast gestreckten Beinen, bei der die Stange an den Oberschenkeln entlang abgesenkt wird — dehnt und belastet die Beinbeuger.",
+      "description_es": "Una bisagra de cadera con las piernas casi rectas, bajando la barra a lo largo de los muslos para estirar y cargar los isquiotibiales.",
       "category": "strength",
       "force_type": "pull",
       "mechanic": "compound",
@@ -27493,6 +27850,21 @@
         "Baja hasta donde la flexibilidad de los isquiotibiales lo permita con la espalda plana.",
         "Empuja a través de los talones para volver a la posición erguida.",
         "Repite el número de repeticiones deseado."
+      ],
+      "tips_en": [
+        "Push your hips back and keep the bar close to your legs.",
+        "Go only as deep as a flat back allows.",
+        "Feel the hamstrings load in the stretch, then drive the hips forward to stand."
+      ],
+      "tips_de": [
+        "Schiebe die Hüfte nach hinten und halte die Stange nah an den Beinen.",
+        "Gehe nur so tief, wie es dein flacher Rücken erlaubt.",
+        "Spüre die Dehnung in den Beinbeugern und drücke dann die Hüfte nach vorn zum Aufrichten."
+      ],
+      "tips_es": [
+        "Lleva las caderas hacia atrás y mantén la barra cerca de las piernas.",
+        "Baja solo hasta donde te permita mantener la espalda plana.",
+        "Siente la carga en los isquiotibiales al estirar y luego empuja las caderas hacia delante para subir."
       ],
       "met": 6.0,
       "images": {
@@ -28041,6 +28413,9 @@
       "name_en": "Thruster",
       "name_de": "Thruster",
       "name_es": "Thruster",
+      "description_en": "A full-body barbell movement combining a front squat with an overhead press in one fluid drive.",
+      "description_de": "Eine Ganzkörperübung mit der Langhantel, die eine Frontkniebeuge und ein Überkopfdrücken in einer fließenden Bewegung verbindet.",
+      "description_es": "Un movimiento de cuerpo completo con barra que combina una sentadilla frontal con un press por encima de la cabeza en un solo impulso fluido.",
       "category": "strength",
       "force_type": "dynamic",
       "mechanic": "compound",
@@ -28089,6 +28464,21 @@
         "Impúlsate saliendo de la sentadilla y empuja la barra por encima de la cabeza en un solo movimiento.",
         "Bloquea los brazos en la parte superior con la barra sobre la cabeza.",
         "Baja la barra al rack frontal y repite."
+      ],
+      "tips_en": [
+        "Use the momentum from the squat drive to launch the press.",
+        "Keep your elbows high so the bar rests on your shoulders, not your wrists.",
+        "Finish each rep with the bar locked out over your ears."
+      ],
+      "tips_de": [
+        "Nutze den Schwung aus der Kniebeuge, um das Drücken einzuleiten.",
+        "Halte die Ellbogen hoch, damit die Stange auf den Schultern liegt, nicht auf den Handgelenken.",
+        "Beende jede Wiederholung mit der Stange über den Ohren ausgestreckt."
+      ],
+      "tips_es": [
+        "Aprovecha el impulso de la sentadilla para lanzar el press.",
+        "Mantén los codos altos para que la barra descanse en los hombros, no en las muñecas.",
+        "Termina cada repetición con la barra bloqueada sobre las orejas."
       ],
       "met": 6.0,
       "images": {
@@ -29893,6 +30283,7 @@
       "force_type": "pull",
       "mechanic": "isolation",
       "difficulty": "intermediate",
+      "equipment": "dumbbell",
       "body_part": "core",
       "primary_muscles": [
         "rectus_abdominis"
@@ -29912,10 +30303,10 @@
       ],
       "variation_group": "crunch",
       "is_unilateral": false,
-      "is_bodyweight": true,
+      "is_bodyweight": false,
       "instructions_en": [
         "Lie on the floor with your feet flat against a wall, knees at 90 degrees.",
-        "Hold a weight plate on your chest.",
+        "Hold a dumbbell against your chest with both hands.",
         "Crunch up, lifting your shoulder blades off the floor.",
         "Lower with control.",
         "Repeat."
@@ -29949,7 +30340,7 @@
         "Sujeta el disco sobre el pecho durante todo el ejercicio.",
         "Despega los omóplatos del suelo sin tirar del cuello."
       ],
-      "met": 3.5,
+      "met": 5.0,
       "images": {
         "flat": {
           "start": "images/flat/weighted-wall-crunch-start.webp",

@@ -11,7 +11,7 @@
   <img src="images/flat/cable-crunch-peak.webp" width="130" />
 </p>
 
-**A free, ready-to-use multilingual fitness exercise dataset — JSON + 360 px flat WebP illustrations, with target muscles, equipment, MET values, and full instructions in English, German & Spanish. Free for personal *and* commercial in-app use, with attribution.**
+**A free, ready-to-use multilingual fitness exercise dataset — JSON + 512 px flat WebP illustrations, with target muscles, equipment, MET values, and full instructions in English, German & Spanish. Free for personal *and* commercial in-app use, with attribution.**
 
 [![Data](https://img.shields.io/badge/Data-JSON%20%2B%20WebP-blue?style=flat-square)](exercises.json)
 [![Languages](https://img.shields.io/badge/Languages-EN%20%7C%20DE%20%7C%20ES-9cf?style=flat-square)](#multilingual)
@@ -26,7 +26,7 @@
 
 ## What is this?
 
-This is the **free tier** of [**RepDB**](https://repdb.co), a curated commercial exercise dataset. It contains the free-tier snapshot (currently 400 of 470+ exercises, 2026-07): each exercise ships as JSON with flat-style 360 px WebP illustrations (start/peak poses, or a single pose for stretches), target muscles, equipment, goals, tags, MET values, and step-by-step instructions in **English, German, and Spanish**.
+This is the **free tier** of [**RepDB**](https://repdb.co), a curated commercial exercise dataset. It contains the free-tier snapshot (currently 400 of 470+ exercises, 2026-07): each exercise ships as JSON with flat-style 512 px WebP illustrations (start/peak poses, or a single pose for stretches), target muscles, equipment, goals, tags, MET values, and step-by-step instructions in **English, German, and Spanish**.
 
 Unlike the usual scraped exercise JSONs, everything here is original, consistent, and **usable in commercial apps for free** — the only hard requirement is attribution. And unlike an API, it's just files: no key, no rate limit, no uptime to worry about.
 
@@ -97,7 +97,7 @@ Each entry in `exercises[]`:
 
 ### Images
 
-- `images/flat/` — flat-illustration style on a solid designed background, **360×360 WebP**.
+- `images/flat/` — flat-illustration style on a solid designed background, **512×512 WebP**.
 - Most exercises have two poses, `start` and `peak`; stretches and holds have a single `main` pose. **Handle both shapes.**
 - Some near-identical exercise variants intentionally share the same image file (aliases) — key your UI by exercise `id`, not by image path.
 - The path is already in each record — `ex.images.flat.peak` → `images/flat/<id>-peak.webp`.
@@ -115,7 +115,7 @@ The [`upgrade-samples/`](upgrade-samples/) folder holds a handful of **Standard-
 
 | | **Free** (this repo) | [**Starter**](https://repdb.co/pricing) | [**Standard**](https://repdb.co/pricing) |
 |---|---|---|---|
-| Images | flat, 360 px | classic white-background, 1024 px + flat | Starter **+ transparent backgrounds + looping animations** |
+| Images | flat, 512 px | classic white-background, 1024 px + flat | Starter **+ transparent backgrounds + looping animations** |
 | Exercise set | dated snapshot | full, growing dataset | full, growing dataset |
 | Updates | quarterly lagged snapshot | continuous | continuous |
 | Formats | JSON + WebP | JSON + SQLite + WebP | JSON + SQLite + WebP + animations |
