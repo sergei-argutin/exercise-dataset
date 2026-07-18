@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">RepDB Exercise Dataset</title>
+  <defs>
+    <linearGradient id="g" x1="32" y1="24" x2="224" y2="232" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#19c991"/>
+      <stop offset="1" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="#090d0c"/>
+  <rect x="24" y="24" width="208" height="208" rx="48" fill="url(#g)"/>
+  <g fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="128" cy="79" rx="62" ry="24"/>
+    <path d="M66 79v98c0 13 28 24 62 24s62-11 62-24V79"/>
+    <path d="M66 128c0 13 28 24 62 24s62-11 62-24"/>
+  </g>
+</svg>

@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/repdb-dataset-icon.svg" width="92" alt="RepDB Exercise Dataset icon" />
+
 # 💪 Free Exercise Dataset — JSON + Images (RepDB free tier)
 
 <p>
