@@ -69,12 +69,14 @@
   ol{padding-left:18px}
   .foot{border-top:1px solid var(--line);margin-top:16px;padding-top:12px;color:var(--mut);font-size:.85rem}
   .x{position:absolute;top:10px;right:14px;background:0;border:0;color:var(--mut);font-size:1.4rem;cursor:pointer}
-  .promo{background:linear-gradient(90deg,#0f2417,#14171c);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:0 0 18px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-  .upgrade{margin:48px 0 0;border-top:1px solid var(--line);padding-top:28px}
+  .promo{background:linear-gradient(135deg,#0f2417,#14171c 58%);border:1px solid var(--line);border-radius:12px;padding:18px;margin:0 0 18px}
+  .promo-copy{margin:0}
+  .promo-actions{margin-top:18px}
+  .upgrade{margin:18px 0 0;border-top:1px solid var(--line);padding-top:18px}
   .upgrade h2{font-size:1.25rem;margin:0 0 4px}
   .upgrade .note{color:var(--mut);font-size:.88rem;margin:0 0 16px}
   .upgrade .note b{color:var(--fg)}
-  .samples{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px}
+  .samples{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:14px}
   .samples figure{margin:0;border:1px solid var(--line);border-radius:12px;padding:8px;text-align:center;
     background-image:conic-gradient(#1b1e25 90deg,#0f1217 0 180deg,#1b1e25 0 270deg,#0f1217 0);background-size:16px 16px}
   .samples img{width:100%;aspect-ratio:1;object-fit:contain}
@@ -97,24 +99,23 @@
 
 <main>
   <div class="promo">
-    <span>This is the <b>free tier</b> — <b><span class="jscount">400</span> exercises</b>, flat style, 512&nbsp;px, EN/DE/ES, attribution license. The full paid dataset keeps growing and ships classic white-background 1024&nbsp;px images, transparent backgrounds and looping animations.</span>
-    <a class="cta" href="https://repdb.co/pricing">See pricing →</a>
+    <p class="promo-copy">This is the <b>free tier</b> — <b><span class="jscount">400</span> exercises</b>, flat style, 512&nbsp;px, EN/DE/ES, attribution license. The full paid dataset keeps growing and ships classic white-background 1024&nbsp;px images, transparent backgrounds and looping animations.</p>
+    <section class="upgrade" aria-labelledby="upgrade-heading">
+      <h2 id="upgrade-heading">Upgrade samples — Standard tier preview</h2>
+      <p class="note"><b>Standard tier quality — evaluation only, see <a href="https://github.com/sergei-argutin/exercise-dataset/blob/main/LICENSE-DATA.md">LICENSE-DATA.md</a>.</b>
+        Looping, transparent-background exercise animations — the same clips shown on <a href="https://repdb.co">repdb.co</a> (checkerboard shows the transparency). The Standard tier adds looping animations like these for most exercises.</p>
+      <div class="samples">
+        <figure><img src="upgrade-samples/bench-leg-pull-in.webp" alt="Bench Leg Pull-in — looping transparent animation" loading="lazy"><figcaption>Bench Leg Pull-in · <span class="tag">animation</span></figcaption></figure>
+        <figure><img src="upgrade-samples/cossack-squat.webp" alt="Cossack Squat — looping transparent animation" loading="lazy"><figcaption>Cossack Squat · <span class="tag">animation</span></figcaption></figure>
+        <figure><img src="upgrade-samples/bent-arm-barbell-pullover.webp" alt="Bent-arm Barbell Pullover — looping transparent animation" loading="lazy"><figcaption>Bent-arm Barbell Pullover · <span class="tag">animation</span></figcaption></figure>
+        <figure><img src="upgrade-samples/incline-db-curl.webp" alt="Incline Dumbbell Curl — looping transparent animation" loading="lazy"><figcaption>Incline Dumbbell Curl · <span class="tag">animation</span></figcaption></figure>
+        <figure><img src="upgrade-samples/mountain-climbers.webp" alt="Mountain Climbers — looping transparent animation" loading="lazy"><figcaption>Mountain Climbers · <span class="tag">animation</span></figcaption></figure>
+      </div>
+    </section>
+    <div class="promo-actions"><a class="cta" href="https://repdb.co/pricing">See pricing →</a></div>
   </div>
   <div class="count" id="count"></div>
   <div class="grid" id="grid"></div>
-
-  <section class="upgrade">
-    <h2>Upgrade samples — Standard tier preview</h2>
-    <p class="note"><b>Standard tier quality — evaluation only, see <a href="https://github.com/sergei-argutin/exercise-dataset/blob/main/LICENSE-DATA.md">LICENSE-DATA.md</a>.</b>
-      Looping, transparent-background exercise animations — the same clips shown on <a href="https://repdb.co">repdb.co</a> (checkerboard shows the transparency). The Standard tier adds looping animations like these for most exercises → <a href="https://repdb.co/pricing">repdb.co/pricing</a>.</p>
-    <div class="samples">
-      <figure><img src="upgrade-samples/bench-leg-pull-in.webp" alt="Bench Leg Pull-in — looping transparent animation" loading="lazy"><figcaption>Bench Leg Pull-in · <span class="tag">animation</span></figcaption></figure>
-      <figure><img src="upgrade-samples/cossack-squat.webp" alt="Cossack Squat — looping transparent animation" loading="lazy"><figcaption>Cossack Squat · <span class="tag">animation</span></figcaption></figure>
-      <figure><img src="upgrade-samples/bent-arm-barbell-pullover.webp" alt="Bent-arm Barbell Pullover — looping transparent animation" loading="lazy"><figcaption>Bent-arm Barbell Pullover · <span class="tag">animation</span></figcaption></figure>
-      <figure><img src="upgrade-samples/incline-db-curl.webp" alt="Incline Dumbbell Curl — looping transparent animation" loading="lazy"><figcaption>Incline Dumbbell Curl · <span class="tag">animation</span></figcaption></figure>
-      <figure><img src="upgrade-samples/mountain-climbers.webp" alt="Mountain Climbers — looping transparent animation" loading="lazy"><figcaption>Mountain Climbers · <span class="tag">animation</span></figcaption></figure>
-    </div>
-  </section>
 </main>
 
 <dialog id="dlg"><button class="x" aria-label="Close" onclick="dlg.close()">×</button><div class="modal" id="modal"></div></dialog>
