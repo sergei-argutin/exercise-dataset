@@ -33,6 +33,9 @@ Unlike the usual scraped exercise JSONs, everything here is original, consistent
 > [!IMPORTANT]
 > **Attribution is required.** Place a visible link — **"Exercise data by RepDB (repdb.co)"** — in your app's about/credits screen, your project's README, or your website footer. That's the price of the free tier.
 
+Copy-paste Markdown, HTML, and app-credit versions are ready in
+[`ATTRIBUTION.md`](ATTRIBUTION.md).
+
 ## License (summary)
 
 Full text: [`LICENSE-DATA.md`](LICENSE-DATA.md). The seven terms in short:
