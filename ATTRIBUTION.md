@@ -7,20 +7,20 @@ format fits your project.
 ## Markdown
 
 ```md
-Exercise data by [RepDB](https://repdb.co/free-exercise-dataset)
+Exercise data by [RepDB](https://repdb.co)
 ```
 
 ## HTML
 
 ```html
-Exercise data by <a href="https://repdb.co/free-exercise-dataset">RepDB (repdb.co)</a>
+Exercise data by <a href="https://repdb.co">RepDB (repdb.co)</a>
 ```
 
 ## Plain text / app credits
 
 ```text
 Exercise data by RepDB (repdb.co)
-https://repdb.co/free-exercise-dataset
+https://repdb.co
 ```
 
 Keep the attribution visible to users. The full license is in `LICENSE.md`.
