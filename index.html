@@ -45,7 +45,7 @@
   .bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;max-width:1100px;margin:8px auto 0;padding:0 20px}
   input,select{background:var(--card);border:1px solid var(--line);color:var(--fg);padding:9px 11px;border-radius:8px;font-size:14px}
   input{flex:1;min-width:180px}
-  main{max-width:1100px;margin:18px auto 60px;padding:0 20px}
+  main{max-width:1100px;margin:18px auto 130px;padding:0 20px}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}
   .card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;cursor:pointer;transition:.12s}
   .card:hover,.card:focus-visible{border-color:var(--acc);transform:translateY(-2px)}
@@ -69,9 +69,6 @@
   ol{padding-left:18px}
   .foot{border-top:1px solid var(--line);margin-top:16px;padding-top:12px;color:var(--mut);font-size:.85rem}
   .x{position:absolute;top:10px;right:14px;background:0;border:0;color:var(--mut);font-size:1.4rem;cursor:pointer}
-  .promo{background:linear-gradient(135deg,#0f2417,#14171c 58%);border:1px solid var(--line);border-radius:12px;padding:18px;margin:0 0 18px}
-  .promo-copy{margin:0}
-  .promo-actions{margin-top:18px}
   .upgrade{margin:18px 0 0;border-top:1px solid var(--line);padding-top:18px}
   .upgrade h2{font-size:1.25rem;margin:0 0 4px}
   .upgrade .note{color:var(--mut);font-size:.88rem;margin:0 0 16px}
@@ -82,6 +79,31 @@
   .samples img{width:100%;aspect-ratio:1;object-fit:contain}
   .samples figcaption{color:var(--mut);font-size:.75rem;margin-top:4px;background:var(--bg);border-radius:6px;padding:2px 4px}
   .samples .tag{color:var(--acc);font-weight:700}
+  .dock{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;gap:12px;align-items:center;
+    max-width:1100px;margin:0 auto;padding:10px 20px calc(10px + env(safe-area-inset-bottom));
+    background:rgba(15,17,22,.92);backdrop-filter:blur(10px);border:1px solid var(--line);border-bottom:0;
+    border-radius:14px 14px 0 0;box-shadow:0 -10px 30px rgba(0,0,0,.45);
+    animation:dock-in .55s .5s cubic-bezier(.2,.8,.2,1) both}
+  @keyframes dock-in{from{transform:translateY(130%)}to{transform:translateY(0)}}
+  .dock-open{display:flex;gap:12px;align-items:center;flex:1;min-width:0;
+    background:0;border:0;padding:0;color:inherit;font:inherit;text-align:left;cursor:pointer}
+  .dock-open img{width:80px;height:80px;flex:none;object-fit:contain;border-radius:10px;padding:3px;
+    background-image:conic-gradient(#1b1e25 90deg,#0f1217 0 180deg,#1b1e25 0 270deg,#0f1217 0);background-size:12px 12px}
+  .dock-open:hover img,.dock-open:focus-visible img{outline:1px solid var(--acc)}
+  .dock-open:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:10px}
+  .dock-copy{min-width:0}
+  .dock-copy b{display:block;font-size:.92rem}
+  .dock-copy b .tag{color:var(--acc)}
+  .dock-copy>span{display:block;color:var(--mut);font-size:.78rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .dock .cta{flex:none;padding:9px 14px}
+  @media (max-width:560px){
+    .dock{gap:10px;padding:9px 12px calc(9px + env(safe-area-inset-bottom))}
+    .dock-open img{width:68px;height:68px}
+    .dock-copy>span,.dock-copy b .tag{display:none}
+    .dock-copy b{font-size:.86rem;line-height:1.25}
+    .dock .cta{padding:8px 11px;font-size:.85rem}
+  }
+  @media (prefers-reduced-motion:reduce){.dock{animation:none}}
 </style>
 </head>
 <body>
@@ -98,25 +120,20 @@
 </div>
 
 <main>
-  <div class="promo">
-    <p class="promo-copy">This is the <b>free tier</b> — <b><span class="jscount">400</span> exercises</b>, flat style, 512&nbsp;px, EN/DE/ES, attribution license. The full paid dataset keeps growing and ships classic white-background 1024&nbsp;px images, transparent backgrounds and looping animations.</p>
-    <section class="upgrade" aria-labelledby="premium-heading">
-      <h2 id="premium-heading">Premium sample — Standard tier preview</h2>
-      <p class="note"><b>Standard tier quality.</b>
-        Bent-over dumbbell row — classic start/peak stills plus the looping, transparent-background
-        animation, the same clip shown on <a href="https://repdb.co">repdb.co</a> (checkerboard shows
-        the transparency). The Standard tier adds animations like this for most exercises.</p>
-      <div class="samples">
-        <figure><img src="premium-samples/bent-over-db-row-start.webp" alt="Bent-over Dumbbell Row — start pose, classic style" loading="lazy"><figcaption>Bent-over DB Row · <span class="tag">start</span></figcaption></figure>
-        <figure><img src="premium-samples/bent-over-db-row-peak.webp" alt="Bent-over Dumbbell Row — peak pose, classic style" loading="lazy"><figcaption>Bent-over DB Row · <span class="tag">peak</span></figcaption></figure>
-        <figure><img src="premium-samples/bent-over-db-row.webp" alt="Bent-over Dumbbell Row — looping transparent animation" loading="lazy"><figcaption>Bent-over DB Row · <span class="tag">animation</span></figcaption></figure>
-      </div>
-    </section>
-    <div class="promo-actions"><a class="cta" href="https://repdb.co/pricing">See pricing →</a></div>
-  </div>
   <div class="count" id="count"></div>
   <div class="grid" id="grid"></div>
 </main>
+
+<aside class="dock" aria-label="Standard tier preview">
+  <button class="dock-open" id="dockOpen">
+    <img src="premium-samples/bent-over-db-row.webp" alt="Bent-over Dumbbell Row — looping transparent animation" />
+    <span class="dock-copy">
+      <b>Standard tier preview <span class="tag">— see the sample</span></b>
+      <span>Looping, transparent-background animations and classic 1024&nbsp;px images.</span>
+    </span>
+  </button>
+  <a class="cta" href="https://repdb.co/pricing">See pricing →</a>
+</aside>
 
 <dialog id="dlg"><button class="x" aria-label="Close" onclick="dlg.close()">×</button><div class="modal" id="modal"></div></dialog>
 
@@ -137,6 +154,23 @@ fetch('exercises.json').then(r=>r.json()).then(d=>{
   grid.innerHTML='<p class="count">Could not load exercises.json — try reloading, or browse the <a href="https://github.com/sergei-argutin/exercise-dataset">repository files</a> directly.</p>';
 });
 dlg.onclick=ev=>{ if(ev.target===dlg) dlg.close(); };
+
+document.getElementById('dockOpen').onclick=()=>{
+  modal.innerHTML=`<section class="upgrade" style="margin:0;border:0;padding:0">
+    <h2>Premium sample — Standard tier preview</h2>
+    <p class="note"><b>Standard tier quality.</b>
+      Bent-over dumbbell row — classic start/peak stills plus the looping, transparent-background
+      animation, the same clip shown on <a href="https://repdb.co">repdb.co</a> (checkerboard shows
+      the transparency). The Standard tier adds animations like this for most exercises.</p>
+    <div class="samples">
+      <figure><img src="premium-samples/bent-over-db-row-start.webp" alt="Bent-over Dumbbell Row — start pose, classic style"><figcaption>Bent-over DB Row · <span class="tag">start</span></figcaption></figure>
+      <figure><img src="premium-samples/bent-over-db-row-peak.webp" alt="Bent-over Dumbbell Row — peak pose, classic style"><figcaption>Bent-over DB Row · <span class="tag">peak</span></figcaption></figure>
+      <figure><img src="premium-samples/bent-over-db-row.webp" alt="Bent-over Dumbbell Row — looping transparent animation"><figcaption>Bent-over DB Row · <span class="tag">animation</span></figcaption></figure>
+    </div>
+    <div class="foot">The full paid dataset keeps growing — classic 1024&nbsp;px images, transparency &amp; animations at <a href="https://repdb.co/pricing">repdb.co/pricing →</a></div>
+  </section>`;
+  dlg.showModal();
+};
 
 function filtered(){
   const t=q.value.toLowerCase(), b=bodySel.value, eq=equipSel.value;
