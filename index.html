@@ -111,7 +111,7 @@
 <header>
   <h1>Free Exercise Dataset — JSON + Images</h1>
   <p class="sub">The free tier of <b>RepDB</b>: <b class="jscount">400</b> fitness exercises with flat illustrations, target muscles, equipment, MET, and instructions in English, German &amp; Spanish. Free for personal and commercial in-app use with attribution — see <a href="https://github.com/sergei-argutin/exercise-dataset/blob/main/LICENSE-DATA.md">LICENSE-DATA.md</a>. The full paid dataset keeps growing and adds high-res classic images, transparency and animations.</p>
-  <a class="cta" href="https://repdb.co/pricing">Get the full dataset →</a>
+  <a class="cta" href="https://repdb.co/pricing?utm_source=exercise-dataset">Get the full dataset →</a>
 </header>
 
 <div class="bar">
@@ -133,7 +133,7 @@
       <span>Looping, transparent-background animations and classic 1024&nbsp;px images.</span>
     </span>
   </button>
-  <a class="cta" href="https://repdb.co/pricing">See pricing →</a>
+  <a class="cta" href="https://repdb.co/pricing?utm_source=exercise-dataset">See pricing →</a>
 </aside>
 
 <dialog id="dlg"><button class="x" aria-label="Close" onclick="dlg.close()">×</button><div class="modal" id="modal"></div></dialog>
@@ -161,14 +161,14 @@ document.getElementById('dockOpen').onclick=()=>{
     <h2>Premium sample — Standard tier preview</h2>
     <p class="note"><b>Standard tier quality.</b>
       Bent-over dumbbell row — classic start/peak stills plus the looping, transparent-background
-      animation, the same clip shown on <a href="https://repdb.co">repdb.co</a> (checkerboard shows
+      animation, the same clip shown on <a href="https://repdb.co/?utm_source=exercise-dataset">repdb.co</a> (checkerboard shows
       the transparency). The Standard tier adds animations like this for most exercises.</p>
     <div class="samples">
       <figure><img src="premium-samples/bent-over-db-row-start.webp" alt="Bent-over Dumbbell Row — start pose, classic style"><figcaption>Bent-over DB Row · <span class="tag">start</span></figcaption></figure>
       <figure><img src="premium-samples/bent-over-db-row-peak.webp" alt="Bent-over Dumbbell Row — peak pose, classic style"><figcaption>Bent-over DB Row · <span class="tag">peak</span></figcaption></figure>
       <figure><img src="premium-samples/bent-over-db-row.webp" alt="Bent-over Dumbbell Row — looping transparent animation"><figcaption>Bent-over DB Row · <span class="tag">animation</span></figcaption></figure>
     </div>
-    <div class="foot">The full paid dataset keeps growing — classic 1024&nbsp;px images, transparency &amp; animations at <a href="https://repdb.co/pricing">repdb.co/pricing →</a></div>
+    <div class="foot">The full paid dataset keeps growing — classic 1024&nbsp;px images, transparency &amp; animations at <a href="https://repdb.co/pricing?utm_source=exercise-dataset">repdb.co/pricing →</a></div>
   </section>`;
   dlg.showModal();
 };
@@ -219,7 +219,7 @@ function open_(e){
     <p>${e.description_en||''}</p>
     <div class="chips">${chips}</div>
     ${steps?`<ol>${steps}</ol>`:''}
-    <div class="foot">German &amp; Spanish translations are in the JSON. The full paid dataset keeps growing — classic 1024&nbsp;px images, transparency &amp; animations at <a href="https://repdb.co">repdb.co →</a></div>`;
+    <div class="foot">German &amp; Spanish translations are in the JSON. The full paid dataset keeps growing — classic 1024&nbsp;px images, transparency &amp; animations at <a href="https://repdb.co/?utm_source=exercise-dataset">repdb.co →</a></div>`;
   dlg.showModal();
 }
 q.oninput=bodySel.onchange=equipSel.onchange=render;

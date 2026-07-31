@@ -18,9 +18,9 @@
 [![Data](https://img.shields.io/badge/Data-JSON%20%2B%20WebP-blue?style=flat-square)](exercises.json)
 [![Languages](https://img.shields.io/badge/Languages-EN%20%7C%20DE%20%7C%20ES-9cf?style=flat-square)](#multilingual)
 [![License](https://img.shields.io/badge/License-Free%20tier%20(attribution)-success?style=flat-square)](LICENSE-DATA.md)
-[![Full dataset](https://img.shields.io/badge/Full%20dataset-repdb.co-lightgrey?style=flat-square)](https://repdb.co)
+[![Full dataset](https://img.shields.io/badge/Full%20dataset-repdb.co-lightgrey?style=flat-square)](https://repdb.co/?utm_source=github-dataset)
 
-**[⬇️ Download the 400-exercise ZIP →](https://github.com/sergei-argutin/exercise-dataset/releases/latest/download/repdb-free.zip)** &nbsp;·&nbsp; **[🌐 Browse live →](https://exercise-dataset.com/)** &nbsp;·&nbsp; **[⬆️ Paid tiers →](https://repdb.co/pricing)**
+**[⬇️ Download the 400-exercise ZIP →](https://github.com/sergei-argutin/exercise-dataset/releases/latest/download/repdb-free.zip)** &nbsp;·&nbsp; **[🌐 Browse live →](https://exercise-dataset.com/)** &nbsp;·&nbsp; **[⬆️ Paid tiers →](https://repdb.co/pricing?utm_source=github-dataset)**
 
 </div>
 
@@ -28,7 +28,7 @@
 
 ## What is this?
 
-This is the **free tier** of [**RepDB**](https://repdb.co), a curated commercial exercise dataset. It contains the free-tier snapshot (currently 400 of 470+ exercises, 2026-07): each exercise ships as JSON with flat-style 512 px WebP illustrations (start/peak poses, or a single pose for stretches), target muscles, equipment, goals, tags, MET values, and step-by-step instructions in **English, German, and Spanish**.
+This is the **free tier** of [**RepDB**](https://repdb.co/?utm_source=github-dataset), a curated commercial exercise dataset. It contains the free-tier snapshot (currently 400 of 470+ exercises, 2026-07): each exercise ships as JSON with flat-style 512 px WebP illustrations (start/peak poses, or a single pose for stretches), target muscles, equipment, goals, tags, MET values, and step-by-step instructions in **English, German, and Spanish**.
 
 Unlike the usual scraped exercise JSONs, everything here is original, consistent, and **usable in commercial apps for free** — the only hard requirement is attribution. And unlike an API, it's just files: no key, no rate limit, no uptime to worry about.
 
@@ -114,11 +114,11 @@ Names, descriptions, instructions, and tips ship in **English, German, and Spani
 
 ## `upgrade-samples/` — paid-tier preview (evaluation only)
 
-The [`upgrade-samples/`](upgrade-samples/) folder holds a handful of **Standard-tier** assets — 5 looping, transparent-background exercise animations, the same clips shown on [repdb.co](https://repdb.co) — so you can judge the paid quality before buying. They are **evaluation-only**: not for production use, not for redistribution (license term 6). See them rendered on the [live viewer](https://exercise-dataset.com/).
+The [`upgrade-samples/`](upgrade-samples/) folder holds a handful of **Standard-tier** assets — 5 looping, transparent-background exercise animations, the same clips shown on [repdb.co](https://repdb.co/?utm_source=github-dataset) — so you can judge the paid quality before buying. They are **evaluation-only**: not for production use, not for redistribution (license term 6). See them rendered on the [live viewer](https://exercise-dataset.com/).
 
 ## Free vs. paid tiers
 
-| | **Free** (this repo) | [**Starter**](https://repdb.co/pricing) | [**Standard**](https://repdb.co/pricing) |
+| | **Free** (this repo) | [**Starter**](https://repdb.co/pricing?utm_source=github-dataset) | [**Standard**](https://repdb.co/pricing?utm_source=github-dataset) |
 |---|---|---|---|
 | Images | flat, 512 px | classic white-background, 1024 px + flat | Starter **+ transparent backgrounds + looping animations** |
 | Exercise set | dated snapshot | full, growing dataset | full, growing dataset |
@@ -129,7 +129,7 @@ The [`upgrade-samples/`](upgrade-samples/) folder holds a handful of **Standard-
 
 For perspective: **our free tier ships the resolution ExerciseDB charges $299 for.**
 
-➡️ **[repdb.co/pricing](https://repdb.co/pricing)** — one payment, no subscription, no API, no rate limits.
+➡️ **[repdb.co/pricing](https://repdb.co/pricing?utm_source=github-dataset)** — one payment, no subscription, no API, no rate limits.
 
 ## See it in real apps
 
@@ -141,6 +141,6 @@ Example integrations (each vendors this dataset):
 
 ## Links
 
-- 🌐 **Full dataset & pricing** — https://repdb.co
+- 🌐 **Full dataset & pricing** — [repdb.co](https://repdb.co/?utm_source=github-dataset)
 - 🧪 **Live browser for this dataset** — https://exercise-dataset.com/
 - 💬 **Questions** — support@repdb.co
