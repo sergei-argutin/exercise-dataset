@@ -20,7 +20,7 @@
 [![License](https://img.shields.io/badge/License-Free%20tier%20(attribution)-success?style=flat-square)](LICENSE-DATA.md)
 [![Full dataset](https://img.shields.io/badge/Full%20dataset-repdb.co-lightgrey?style=flat-square)](https://repdb.co)
 
-**[⬇️ Download the 400-exercise ZIP →](https://github.com/sergei-argutin/exercise-dataset/releases/latest/download/repdb-free.zip)** &nbsp;·&nbsp; **[🌐 Browse live →](https://sergei-argutin.github.io/exercise-dataset/)** &nbsp;·&nbsp; **[⬆️ Paid tiers →](https://repdb.co/pricing)**
+**[⬇️ Download the 400-exercise ZIP →](https://github.com/sergei-argutin/exercise-dataset/releases/latest/download/repdb-free.zip)** &nbsp;·&nbsp; **[🌐 Browse live →](https://exercise-dataset.com/)** &nbsp;·&nbsp; **[⬆️ Paid tiers →](https://repdb.co/pricing)**
 
 </div>
 
@@ -56,7 +56,7 @@ This repository is RepDB's own canonical free-tier distribution — term 3 restr
 
 ```js
 const data = await fetch(
-  "https://raw.githubusercontent.com/sergei-argutin/exercise-dataset/main/exercises.json"
+  "https://exercise-dataset.com/exercises.json"
 ).then(r => r.json());
 
 console.log(data.count, "exercises");
@@ -67,7 +67,7 @@ console.log(ex.images.flat.start);   // "images/flat/<id>-start.webp"
 
 ```python
 import json, urllib.request
-url = "https://raw.githubusercontent.com/sergei-argutin/exercise-dataset/main/exercises.json"
+url = "https://exercise-dataset.com/exercises.json"
 data = json.load(urllib.request.urlopen(url))
 print(data["count"], "exercises")
 for ex in data["exercises"]:
@@ -114,7 +114,7 @@ Names, descriptions, instructions, and tips ship in **English, German, and Spani
 
 ## `upgrade-samples/` — paid-tier preview (evaluation only)
 
-The [`upgrade-samples/`](upgrade-samples/) folder holds a handful of **Standard-tier** assets — 5 looping, transparent-background exercise animations, the same clips shown on [repdb.co](https://repdb.co) — so you can judge the paid quality before buying. They are **evaluation-only**: not for production use, not for redistribution (license term 6). See them rendered on the [live viewer](https://sergei-argutin.github.io/exercise-dataset/).
+The [`upgrade-samples/`](upgrade-samples/) folder holds a handful of **Standard-tier** assets — 5 looping, transparent-background exercise animations, the same clips shown on [repdb.co](https://repdb.co) — so you can judge the paid quality before buying. They are **evaluation-only**: not for production use, not for redistribution (license term 6). See them rendered on the [live viewer](https://exercise-dataset.com/).
 
 ## Free vs. paid tiers
 
@@ -142,5 +142,5 @@ Example integrations (each vendors this dataset):
 ## Links
 
 - 🌐 **Full dataset & pricing** — https://repdb.co
-- 🧪 **Live browser for this dataset** — https://sergei-argutin.github.io/exercise-dataset/
+- 🧪 **Live browser for this dataset** — https://exercise-dataset.com/
 - 💬 **Questions** — support@repdb.co
