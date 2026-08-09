@@ -19,7 +19,7 @@
   "name": "RepDB Exercise Dataset (free tier)",
   "description": "Free multilingual fitness exercise dataset: exercises in JSON with flat WebP illustrations, target muscles, equipment, MET values, and step-by-step instructions in English, German and Spanish. Free for personal and commercial in-app use with attribution.",
   "url": "https://exercise-dataset.com/",
-  "license": "https://github.com/sergei-argutin/exercise-dataset/blob/main/LICENSE-DATA.md",
+  "license": "https://github.com/RepDB/exercise-dataset/blob/main/LICENSE-DATA.md",
   "isAccessibleForFree": true,
   "inLanguage": ["en", "de", "es"],
   "creator": {
@@ -110,7 +110,7 @@
 <body>
 <header>
   <h1>Free Exercise Dataset — JSON + Images</h1>
-  <p class="sub">The free tier of <b>RepDB</b>: <b class="jscount">400</b> fitness exercises with flat illustrations, target muscles, equipment, MET, and instructions in English, German &amp; Spanish. Free for personal and commercial in-app use with attribution — see <a href="https://github.com/sergei-argutin/exercise-dataset/blob/main/LICENSE-DATA.md">LICENSE-DATA.md</a>. The full paid dataset keeps growing and adds high-res classic images, transparency and animations.</p>
+  <p class="sub">The free tier of <b>RepDB</b>: <b class="jscount">400</b> fitness exercises with flat illustrations, target muscles, equipment, MET, and instructions in English, German &amp; Spanish. Free for personal and commercial in-app use with attribution — see <a href="https://github.com/RepDB/exercise-dataset/blob/main/LICENSE-DATA.md">LICENSE-DATA.md</a>. The full paid dataset keeps growing and adds high-res classic images, transparency and animations.</p>
   <a class="cta" href="https://repdb.co/pricing?utm_source=exercise-dataset">Get the full dataset →</a>
 </header>
 
@@ -152,7 +152,7 @@ fetch('exercises.json').then(r=>r.json()).then(d=>{
   [...new Set(DATA.map(e=>e.equipment).filter(Boolean))].sort().forEach(v=>equipSel.add(new Option(cap(v),v)));
   render();
 }).catch(()=>{
-  grid.innerHTML='<p class="count">Could not load exercises.json — try reloading, or browse the <a href="https://github.com/sergei-argutin/exercise-dataset">repository files</a> directly.</p>';
+  grid.innerHTML='<p class="count">Could not load exercises.json — try reloading, or browse the <a href="https://github.com/RepDB/exercise-dataset">repository files</a> directly.</p>';
 });
 dlg.onclick=ev=>{ if(ev.target===dlg) dlg.close(); };
 

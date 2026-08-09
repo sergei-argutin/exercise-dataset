@@ -20,7 +20,7 @@
 [![License](https://img.shields.io/badge/License-Free%20tier%20(attribution)-success?style=flat-square)](LICENSE-DATA.md)
 [![Full dataset](https://img.shields.io/badge/Full%20dataset-repdb.co-lightgrey?style=flat-square)](https://repdb.co/?utm_source=github-dataset)
 
-**[⬇️ Download the 400-exercise ZIP →](https://github.com/sergei-argutin/exercise-dataset/releases/latest/download/repdb-free.zip)** &nbsp;·&nbsp; **[🌐 Browse live →](https://exercise-dataset.com/)** &nbsp;·&nbsp; **[⬆️ Paid tiers →](https://repdb.co/pricing?utm_source=github-dataset)**
+**[⬇️ Download the 400-exercise ZIP →](https://github.com/RepDB/exercise-dataset/releases/latest/download/repdb-free.zip)** &nbsp;·&nbsp; **[🌐 Browse live →](https://exercise-dataset.com/)** &nbsp;·&nbsp; **[⬆️ Paid tiers →](https://repdb.co/pricing?utm_source=github-dataset)**
 
 </div>
 
@@ -135,9 +135,9 @@ For perspective: **our free tier ships the resolution ExerciseDB charges $299 fo
 
 Example integrations (each vendors this dataset):
 
-- ▲ **Next.js** — https://github.com/sergei-argutin/repdb-example-nextjs
-- 📱 **React Native (Expo)** — https://github.com/sergei-argutin/repdb-example-react-native
-- 🐦 **Flutter** — https://github.com/sergei-argutin/repdb-example-flutter
+- ▲ **Next.js** — https://github.com/RepDB/repdb-example-nextjs
+- 📱 **React Native (Expo)** — https://github.com/RepDB/repdb-example-react-native
+- 🐦 **Flutter** — https://github.com/RepDB/repdb-example-flutter
 
 ## Links
 
