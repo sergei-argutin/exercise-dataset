@@ -28,7 +28,7 @@
 
 ## What is this?
 
-This is the **free tier** of [**RepDB**](https://repdb.co/?utm_source=github-dataset), a curated commercial exercise dataset. It contains the free-tier snapshot (currently 400 of 470+ exercises, 2026-07): each exercise ships as JSON with flat-style 512 px WebP illustrations (start/peak poses, or a single pose for stretches), target muscles, equipment, goals, tags, MET values, and step-by-step instructions in **English, German, and Spanish**.
+This is the **free tier** of [**RepDB**](https://repdb.co/?utm_source=github-dataset), a curated commercial exercise dataset. It contains the free-tier snapshot (currently 400 of 518+ exercises, 2026-07): each exercise ships as JSON with flat-style 512 px WebP illustrations (start/peak poses, or a single pose for stretches), target muscles, equipment, goals, tags, MET values, and step-by-step instructions in **English, German, and Spanish**.
 
 Unlike the usual scraped exercise JSONs, everything here is original, consistent, and **usable in commercial apps for free** — the only hard requirement is attribution. And unlike an API, it's just files: no key, no rate limit, no uptime to worry about.
 
