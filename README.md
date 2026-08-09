@@ -20,7 +20,7 @@
 [![License](https://img.shields.io/badge/License-Free%20tier%20(attribution)-success?style=flat-square)](LICENSE-DATA.md)
 [![Full dataset](https://img.shields.io/badge/Full%20dataset-repdb.co-lightgrey?style=flat-square)](https://repdb.co/?utm_source=github-dataset)
 
-**[⬇️ Download the 400-exercise ZIP →](https://github.com/RepDB/exercise-dataset/releases/latest/download/repdb-free.zip)** &nbsp;·&nbsp; **[🌐 Browse live →](https://exercise-dataset.com/)** &nbsp;·&nbsp; **[⬆️ Paid tiers →](https://repdb.co/pricing?utm_source=github-dataset)**
+**[⬇️ Download the 250-exercise ZIP →](https://github.com/RepDB/exercise-dataset/releases/latest/download/repdb-free.zip)** &nbsp;·&nbsp; **[🌐 Browse live →](https://exercise-dataset.com/)** &nbsp;·&nbsp; **[⬆️ Paid tiers →](https://repdb.co/pricing?utm_source=github-dataset)**
 
 </div>
 
@@ -28,7 +28,7 @@
 
 ## What is this?
 
-This is the **free tier** of [**RepDB**](https://repdb.co/?utm_source=github-dataset), a curated commercial exercise dataset. It contains the free-tier snapshot (currently 400 of 518+ exercises, 2026-07): each exercise ships as JSON with flat-style 512 px WebP illustrations (start/peak poses, or a single pose for stretches), target muscles, equipment, goals, tags, MET values, and step-by-step instructions in **English, German, and Spanish**.
+This is the **free tier** of [**RepDB**](https://repdb.co/?utm_source=github-dataset), a curated commercial exercise dataset. It contains the free-tier snapshot (currently 250 of 518+ exercises, 2026-08): each exercise ships as JSON with flat-style 512 px WebP illustrations (start/peak poses, or a single pose for stretches), target muscles, equipment, goals, tags, MET values, and step-by-step instructions in **English, German, and Spanish**.
 
 Unlike the usual scraped exercise JSONs, everything here is original, consistent, and **usable in commercial apps for free** — the only hard requirement is attribution. And unlike an API, it's just files: no key, no rate limit, no uptime to worry about.
 
@@ -47,7 +47,7 @@ Full text: [`LICENSE-DATA.md`](LICENSE-DATA.md). The seven terms in short:
 3. **No redistribution as a dataset** — don't republish, resell, or repackage it (or a derivative) as a dataset, dataset repo, or API. In-app use only.
 4. **Image modifications** — resize/crop/recolor for in-app use is fine; upscaled or background-removed derivatives still fall under the no-redistribution rule.
 5. **No generative-AI derivation** — the images may not be used as input, reference, or training/conditioning material for generative models (image-to-image restyling, style transfer, fine-tuning, etc.); outputs count as derived datasets.
-6. **`upgrade-samples/` is evaluation-only** — the paid-tier samples in that folder may not be used in production or redistributed.
+6. **`premium-samples/` is evaluation-only** — the paid-tier samples in that folder may not be used in production or redistributed.
 7. **No warranty; not medical advice.**
 
 This repository is RepDB's own canonical free-tier distribution — term 3 restricts third parties, not this publication (see the "About this repository" note in the license). The `index.html` viewer code is [MIT](LICENSE-CODE).
@@ -112,9 +112,9 @@ Each entry in `exercises[]`:
 
 Names, descriptions, instructions, and tips ship in **English, German, and Spanish** for every exercise in this snapshot — same coverage as the paid dataset.
 
-## `upgrade-samples/` — paid-tier preview (evaluation only)
+## `premium-samples/` — paid-tier preview (evaluation only)
 
-The [`upgrade-samples/`](upgrade-samples/) folder holds a handful of **Standard-tier** assets — 5 looping, transparent-background exercise animations, the same clips shown on [repdb.co](https://repdb.co/?utm_source=github-dataset) — so you can judge the paid quality before buying. They are **evaluation-only**: not for production use, not for redistribution (license term 6). See them rendered on the [live viewer](https://exercise-dataset.com/).
+The [`premium-samples/`](premium-samples/) folder holds a handful of **Standard-tier** assets — 5 looping, transparent-background exercise animations, the same clips shown on [repdb.co](https://repdb.co/?utm_source=github-dataset) — so you can judge the paid quality before buying. They are **evaluation-only**: not for production use, not for redistribution (license term 6). See them rendered on the [live viewer](https://exercise-dataset.com/).
 
 ## Free vs. paid tiers
 
