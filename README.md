@@ -143,4 +143,6 @@ Example integrations (each vendors this dataset):
 
 - 🌐 **Full dataset & pricing** — [repdb.co](https://repdb.co/?utm_source=github-dataset)
 - 🧪 **Live browser for this dataset** — https://exercise-dataset.com/
+- 📄 **One page per exercise** — muscles worked, equipment, instructions, tips and the raw JSON
+  record, e.g. https://exercise-dataset.com/exercise/bulgarian-split-squat/
 - 💬 **Questions** — support@repdb.co

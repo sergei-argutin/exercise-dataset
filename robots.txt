@@ -11,3 +11,5 @@ Disallow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://exercise-dataset.com/sitemap.xml

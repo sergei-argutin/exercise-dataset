@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found — Free Exercise Dataset</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/assets/repdb-icon-32.png" sizes="32x32" type="image/png">
+<style>
+:root{--bg:#0b0c0f;--card:#15171c;--mut:#9aa3af;--fg:#f3f4f6;--acc:#22c55e;--line:#252830}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--fg)}
+a{color:var(--acc)}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.top{border-bottom:1px solid var(--line);padding:14px 0}
+.top .wrap{display:flex;gap:14px;align-items:center;justify-content:space-between}
+.top a.home{color:var(--fg);text-decoration:none;font-weight:700;font-size:.95rem}
+.top a.home span{color:var(--mut);font-weight:400}
+.cta{display:inline-block;background:var(--acc);color:#06210f;font-weight:700;text-decoration:none;padding:8px 14px;border-radius:9px;font-size:.9rem}
+nav.crumbs{font-size:.8rem;color:var(--mut);padding:16px 0 0}
+nav.crumbs a{color:var(--mut)}
+h1{font-size:2rem;line-height:1.2;margin:10px 0 6px}
+.dek{color:var(--mut);margin:0 0 6px;font-size:1.05rem}
+.sub{color:var(--mut);font-size:.85rem;margin:0 0 22px;text-transform:capitalize}
+h2{font-size:1.15rem;margin:34px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+h3{font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;color:var(--mut);margin:16px 0 8px}
+.poses{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0 0}
+.poses.single{grid-template-columns:minmax(0,360px)}
+.poses figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px;text-align:center}
+/* height:auto is load-bearing — the img carries width/height attributes for
+   CLS, and a resolved height would win over aspect-ratio */
+.poses img{width:100%;height:auto;aspect-ratio:1;object-fit:contain}
+.poses figcaption{color:var(--mut);font-size:.75rem;margin-top:6px;text-transform:uppercase;letter-spacing:.06em}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin:0}
+.chip{display:flex;align-items:center;gap:9px;background:var(--card);border:1px solid var(--line);
+  border-radius:999px;padding:5px 14px 5px 6px;font-size:.9rem}
+.chip img{width:34px;height:34px;object-fit:contain;flex:none}
+.chip b{font-weight:600}
+.chip i{font-style:normal;color:var(--mut);font-size:.78rem;display:block;line-height:1.3}
+.plain{display:flex;gap:8px;flex-wrap:wrap}
+.plain span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:.82rem;color:var(--mut)}
+.aka{color:var(--mut);font-size:.85rem;margin:12px 0 0}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+td,th{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mut);font-weight:500;width:38%}
+ol,ul{padding-left:22px}
+ol li,ul li{margin:7px 0}
+.rel{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px;list-style:none;padding:0}
+.rel a{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);
+  border-radius:10px;padding:8px 10px;text-decoration:none;color:var(--fg);font-size:.9rem}
+.rel a:hover{border-color:var(--acc)}
+.rel img{width:40px;height:40px;object-fit:contain;flex:none}
+pre{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;overflow:auto;
+  max-height:420px;font-size:.8rem;line-height:1.5}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.copy{background:var(--card);border:1px solid var(--line);color:var(--fg);border-radius:8px;
+  padding:5px 11px;font:inherit;font-size:.8rem;cursor:pointer;margin-bottom:8px}
+.copy:hover{border-color:var(--acc)}
+.note{color:var(--mut);font-size:.85rem}
+.buy{margin:38px 0 0;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.buy h2{margin:0 0 6px;border:0;padding:0;font-size:1.1rem}
+.buy p{margin:0 0 14px;color:var(--mut);font-size:.92rem}
+footer{border-top:1px solid var(--line);margin-top:46px;padding:20px 0 40px;color:var(--mut);font-size:.85rem}
+footer a{color:var(--mut)}
+@media(max-width:560px){h1{font-size:1.6rem}.poses{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<main>
+<h1>Page not found</h1>
+<p class="dek">That URL is not part of the free exercise dataset.</p>
+<p><a href="/">Browse all exercises →</a></p>
+<p class="note"><a href="/exercises.json">exercises.json</a> ·
+<a href="https://github.com/RepDB/exercise-dataset">GitHub</a> · <a href="https://repdb.co/?utm_source=exercise-page">repdb.co</a></p>
+</main>
+</div>
+</body>
+</html>
