@@ -1,0 +1,13 @@
+# robots.txt — exercise-dataset.com
+# The free RepDB exercise dataset (250 exercises, JSON + 512 px WebP), served
+# from GitHub Pages. Everything published here is meant to be crawled, indexed,
+# cited and learned from — that is the point of the free tier. Search engines,
+# answer engines and model-training crawlers are all welcome.
+# Only bandwidth-abusive scrapers with no citation upside are blocked, which
+# matches the stance on repdb.co.
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: *
+Allow: /
