@@ -22,6 +22,8 @@
 
 **[⬇️ Download the free ZIP →](https://cdn.repdb.co/repdb-assets/site/repdb-free.zip)** &nbsp;·&nbsp; **[🌐 Browse live →](https://exercise-dataset.com/)** &nbsp;·&nbsp; **[✨ Premium assets & license →](https://repdb.co/pricing?utm_source=github-dataset)**
 
+⭐ **Useful for your project? [Star this repository](https://github.com/RepDB/exercise-dataset) to help other fitness developers find it.**
+
 </div>
 
 ---
