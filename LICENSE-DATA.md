@@ -4,9 +4,9 @@
 
 ## Tier scope
 
-**Free** — a dated snapshot of the RepDB exercise dataset with flat-style images, for personal or commercial use inside applications, with attribution.
+**Free** — every fully illustrated exercise in the RepDB catalog, with flat-style images, for personal or commercial use inside applications, with attribution.
 
-If you need the full, growing dataset, 1024px images, the classic image style, transparent backgrounds, or animated exercises, upgrade at https://repdb.co/pricing.
+For 1024px images, the classic image style, transparent backgrounds, animated exercises, or commercial use without attribution, upgrade at https://repdb.co/pricing.
 
 **About this repository.** This repository is the canonical free-tier distribution published by RepDB itself. Term 3 (no redistribution as a dataset) binds third parties — it does not restrict RepDB's own publication here, on Kaggle, or on Hugging Face. Forks made for the purpose of contributing back are fine; republishing a fork as your own dataset is not.
 
