@@ -118,14 +118,19 @@ The [`premium-samples/`](premium-samples/) folder holds one **Standard-tier** sh
 
 ## Free vs. paid tiers
 
+Every tier contains the same 601 distinct, fully illustrated movements. Paid
+tiers add production-grade assets, richer developer data, and commercial use
+without a RepDB attribution.
+
 | | **Free** (this repo) | [**Starter**](https://repdb.co/pricing?utm_source=github-dataset) | [**Standard**](https://repdb.co/pricing?utm_source=github-dataset) |
 |---|---|---|---|
-| Images | flat, 512 px | classic white-background, 1024 px + flat | Starter **+ transparent backgrounds + looping animations** |
-| Exercise set | every fully illustrated exercise (601 today) | same exercise catalog | same exercise catalog |
-| Updates | refreshed when the illustrated catalog changes | current catalog | current catalog |
-| Formats | JSON + WebP | JSON + SQLite + WebP | JSON + SQLite + WebP + animations |
+| Exercise set | all 601 fully illustrated exercises | same 601-exercise catalog | same 601-exercise catalog |
+| Still illustrations | flat style · solid background · 512×512 WebP | flat **+ classic** styles · 1024×1024 WebP | Starter **+ transparent classic backgrounds** |
+| Classic art direction | — | designed classic style with target-muscle highlighting | same classic assets, ready for any theme |
+| Animation | — | — | looping classic exercise animations with transparent backgrounds |
+| Data & developer extras | JSON + WebP | JSON with activity metrics + relations graph | Starter **+ workout templates + AI embeddings** |
 | Languages | EN · DE · ES | EN · DE · ES | EN · DE · ES |
-| License | attribution, in-app only | commercial, no attribution | commercial, no attribution |
+| Commercial license | visible RepDB attribution required; in-app use | use under your own brand, no attribution | use under your own brand, no attribution |
 
 For perspective: **our free tier ships the resolution ExerciseDB charges $299 for.**
 
