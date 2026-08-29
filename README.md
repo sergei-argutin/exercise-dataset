@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/repdb-dataset-icon.svg" width="92" alt="RepDB Exercise Dataset icon" />
+<img src="assets/repdb-icon-180.png" width="92" alt="RepDB kettlebell icon" />
 
 # 💪 Free Exercise Dataset — JSON + Images (RepDB free tier)
 
@@ -13,14 +13,14 @@
   <img src="images/flat/cable-crunch-peak.webp" width="130" />
 </p>
 
-**A free, ready-to-use multilingual fitness exercise dataset — JSON + 512 px flat WebP illustrations, with target muscles, equipment, MET values, and full instructions in English, German & Spanish. Free for personal *and* commercial in-app use, with attribution.**
+**A free, ready-to-use multilingual fitness exercise dataset — 601 exercises in JSON with 512 px flat WebP illustrations, target muscles, equipment, MET values, and full instructions in English, German & Spanish. Free for personal *and* commercial in-app use, with attribution.**
 
 [![Data](https://img.shields.io/badge/Data-JSON%20%2B%20WebP-blue?style=flat-square)](exercises.json)
 [![Languages](https://img.shields.io/badge/Languages-EN%20%7C%20DE%20%7C%20ES-9cf?style=flat-square)](#multilingual)
 [![License](https://img.shields.io/badge/License-Free%20tier%20(attribution)-success?style=flat-square)](LICENSE-DATA.md)
-[![Full dataset](https://img.shields.io/badge/Full%20dataset-repdb.co-lightgrey?style=flat-square)](https://repdb.co/?utm_source=github-dataset)
+[![Premium assets](https://img.shields.io/badge/Premium%20assets-repdb.co-lightgrey?style=flat-square)](https://repdb.co/pricing?utm_source=github-dataset)
 
-**[⬇️ Download the 250-exercise ZIP →](https://github.com/RepDB/exercise-dataset/releases/latest/download/repdb-free.zip)** &nbsp;·&nbsp; **[🌐 Browse live →](https://exercise-dataset.com/)** &nbsp;·&nbsp; **[⬆️ Paid tiers →](https://repdb.co/pricing?utm_source=github-dataset)**
+**[⬇️ Download the free ZIP →](https://cdn.repdb.co/repdb-assets/site/repdb-free.zip)** &nbsp;·&nbsp; **[🌐 Browse live →](https://exercise-dataset.com/)** &nbsp;·&nbsp; **[✨ Premium assets & license →](https://repdb.co/pricing?utm_source=github-dataset)**
 
 </div>
 
@@ -28,7 +28,7 @@
 
 ## What is this?
 
-This is the **free tier** of [**RepDB**](https://repdb.co/?utm_source=github-dataset), a curated commercial exercise dataset. It contains the free-tier snapshot (currently 250 of 518+ exercises, 2026-08): each exercise ships as JSON with flat-style 512 px WebP illustrations (start/peak poses, or a single pose for stretches), target muscles, equipment, goals, tags, MET values, and step-by-step instructions in **English, German, and Spanish**.
+This is the **free public edition** of [**RepDB**](https://repdb.co/?utm_source=github-dataset), a curated commercial exercise dataset. It contains **every fully illustrated exercise in the current catalog** (601 today): each exercise ships as JSON with flat-style 512 px WebP illustrations (start/peak poses, or a single pose for stretches), target muscles, equipment, goals, tags, MET values, and step-by-step instructions in **English, German, and Spanish**.
 
 Unlike the usual scraped exercise JSONs, everything here is original, consistent, and **usable in commercial apps for free** — the only hard requirement is attribution. And unlike an API, it's just files: no key, no rate limit, no uptime to worry about.
 
@@ -110,19 +110,19 @@ Each entry in `exercises[]`:
 <a name="multilingual"></a>
 ### Multilingual
 
-Names, descriptions, instructions, and tips ship in **English, German, and Spanish** for every exercise in this snapshot — same coverage as the paid dataset.
+Names, descriptions, instructions, and tips ship in **English, German, and Spanish** for every exercise in the public catalog — the same exercise coverage as paid bundles.
 
 ## `premium-samples/` — paid-tier preview (evaluation only)
 
-The [`premium-samples/`](premium-samples/) folder holds a handful of **Standard-tier** assets — 5 looping, transparent-background exercise animations, the same clips shown on [repdb.co](https://repdb.co/?utm_source=github-dataset) — so you can judge the paid quality before buying. They are **evaluation-only**: not for production use, not for redistribution (license term 6). See them rendered on the [live viewer](https://exercise-dataset.com/).
+The [`premium-samples/`](premium-samples/) folder holds one **Standard-tier** showcase — classic stills plus a looping transparent-background animation, the same quality shown on [repdb.co](https://repdb.co/?utm_source=github-dataset) — so you can judge paid assets before buying. They are **evaluation-only**: not for production use, not for redistribution (license term 6). See it on the [live viewer](https://exercise-dataset.com/).
 
 ## Free vs. paid tiers
 
 | | **Free** (this repo) | [**Starter**](https://repdb.co/pricing?utm_source=github-dataset) | [**Standard**](https://repdb.co/pricing?utm_source=github-dataset) |
 |---|---|---|---|
 | Images | flat, 512 px | classic white-background, 1024 px + flat | Starter **+ transparent backgrounds + looping animations** |
-| Exercise set | dated snapshot | full, growing dataset | full, growing dataset |
-| Updates | quarterly lagged snapshot | continuous | continuous |
+| Exercise set | every fully illustrated exercise (601 today) | same exercise catalog | same exercise catalog |
+| Updates | refreshed when the illustrated catalog changes | current catalog | current catalog |
 | Formats | JSON + WebP | JSON + SQLite + WebP | JSON + SQLite + WebP + animations |
 | Languages | EN · DE · ES | EN · DE · ES | EN · DE · ES |
 | License | attribution, in-app only | commercial, no attribution | commercial, no attribution |
@@ -141,7 +141,7 @@ Example integrations (each vendors this dataset):
 
 ## Links
 
-- 🌐 **Full dataset & pricing** — [repdb.co](https://repdb.co/?utm_source=github-dataset)
+- ✨ **Premium assets & pricing** — [repdb.co](https://repdb.co/pricing?utm_source=github-dataset)
 - 🧪 **Live browser for this dataset** — https://exercise-dataset.com/
 - 📄 **One page per exercise** — muscles worked, equipment, instructions, tips and the raw JSON
   record, e.g. https://exercise-dataset.com/exercise/bulgarian-split-squat/
