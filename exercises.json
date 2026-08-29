@@ -4,7 +4,7 @@
   "license": "other (see LICENSE-DATA.md)",
   "schema_version": 3,
   "count": 601,
-  "note": "Free 601-exercise tier of RepDB. Full commercial dataset (growing, classic style + animations, EN/DE/ES) at https://repdb.co.",
+  "note": "Free public edition of 601 RepDB exercises. Paid bundles add classic style, premium assets, and an attribution-free commercial license at https://repdb.co.",
   "exercises": [
     {
       "id": "ab-wheel-rollout",
