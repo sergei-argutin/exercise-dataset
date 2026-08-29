@@ -132,8 +132,6 @@ without a RepDB attribution.
 | Languages | EN · DE · ES | EN · DE · ES | EN · DE · ES |
 | Commercial license | visible RepDB attribution required; in-app use | use under your own brand, no attribution | use under your own brand, no attribution |
 
-For perspective: **our free tier ships the resolution ExerciseDB charges $299 for.**
-
 ➡️ **[repdb.co/pricing](https://repdb.co/pricing?utm_source=github-dataset)** — one payment, no subscription, no API, no rate limits.
 
 ## See it in real apps
