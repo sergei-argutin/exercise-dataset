@@ -18,19 +18,31 @@
 [![Data](https://img.shields.io/badge/Data-JSON%20%2B%20WebP-blue?style=flat-square)](exercises.json)
 [![Languages](https://img.shields.io/badge/Languages-EN%20%7C%20DE%20%7C%20ES-9cf?style=flat-square)](#multilingual)
 [![License](https://img.shields.io/badge/License-Free%20tier%20(attribution)-success?style=flat-square)](LICENSE-DATA.md)
-[![Premium assets](https://img.shields.io/badge/Premium%20assets-repdb.co-lightgrey?style=flat-square)](https://repdb.co/pricing?utm_source=github-dataset)
+[![Premium assets](https://img.shields.io/badge/Premium%20assets-repdb.co-lightgrey?style=flat-square)](https://repdb.co/pricing/)
 
-**[⬇️ Download the free ZIP →](https://cdn.repdb.co/repdb-assets/site/repdb-free.zip)** &nbsp;·&nbsp; **[🌐 Browse live →](https://exercise-dataset.com/)** &nbsp;·&nbsp; **[✨ Premium assets & license →](https://repdb.co/pricing?utm_source=github-dataset)**
+**[⬇️ Download the free ZIP →](https://cdn.repdb.co/repdb-assets/site/repdb-free.zip)** &nbsp;·&nbsp; **[🌐 Browse live →](https://exercise-dataset.com/)** &nbsp;·&nbsp; **[✨ Premium assets & license →](https://repdb.co/pricing/)**
 
 ⭐ **Useful for your project? [Star this repository](https://github.com/RepDB/exercise-dataset) to help other fitness developers find it.**
 
 </div>
 
+## Need exercise animations?
+
+**RepDB Standard** adds **smooth looping animations, transparent backgrounds, and one consistent character** for a cohesive exercise library in your app. Place the same animation on light, dark, or custom backgrounds.
+
+<a href="https://repdb.co/preview/">
+  <img src="premium-samples/bent-over-db-row.webp" width="320" alt="RepDB Standard: bent-over dumbbell row animation with muscle highlighting and a transparent background" />
+</a>
+
+**Paid Standard preview · evaluation only.** Production use of this sample requires a Standard license; redistribution is not permitted.
+
+**[Browse the animation preview →](https://repdb.co/preview/)** &nbsp;·&nbsp; **[Standard details & pricing →](https://repdb.co/pricing/)**
+
 ---
 
 ## What is this?
 
-This is the **free public edition** of [**RepDB**](https://repdb.co/?utm_source=github-dataset), a curated commercial exercise dataset. It contains **every fully illustrated exercise in the current catalog** (601 today): each exercise ships as JSON with flat-style 512 px WebP illustrations (start/peak poses, or a single pose for stretches), target muscles, equipment, goals, tags, MET values, and step-by-step instructions in **English, German, and Spanish**.
+This is the **free public edition** of [**RepDB**](https://repdb.co/), a curated commercial exercise dataset. This public snapshot contains **601 fully illustrated exercises**: each exercise ships as JSON with flat-style 512 px WebP illustrations (start/peak poses, or a single pose for stretches), target muscles, equipment, goals, tags, MET values, and step-by-step instructions in **English, German, and Spanish**.
 
 Unlike the usual scraped exercise JSONs, everything here is original, consistent, and **usable in commercial apps for free** — the only hard requirement is attribution. And unlike an API, it's just files: no key, no rate limit, no uptime to worry about.
 
@@ -112,29 +124,30 @@ Each entry in `exercises[]`:
 <a name="multilingual"></a>
 ### Multilingual
 
-Names, descriptions, instructions, and tips ship in **English, German, and Spanish** for every exercise in the public catalog — the same exercise coverage as paid bundles.
+Names, descriptions, instructions, and tips ship in **English, German, and Spanish** for every exercise in this public snapshot.
 
 ## `premium-samples/` — paid-tier preview (evaluation only)
 
-The [`premium-samples/`](premium-samples/) folder holds one **Standard-tier** showcase — classic stills plus a looping transparent-background animation, the same quality shown on [repdb.co](https://repdb.co/?utm_source=github-dataset) — so you can judge paid assets before buying. They are **evaluation-only**: not for production use, not for redistribution (license term 6). See it on the [live viewer](https://exercise-dataset.com/).
+The [`premium-samples/`](premium-samples/) folder holds one **Standard-tier** showcase — classic stills plus a looping transparent-background animation, the same quality shown on [repdb.co](https://repdb.co/) — so you can judge paid assets before buying. They are **evaluation-only**: not for production use, not for redistribution (license term 6). See more exercises in the [animation preview](https://repdb.co/preview/).
 
 ## Free vs. paid tiers
 
-Every tier contains the same 601 distinct, fully illustrated movements. Paid
-tiers add production-grade assets, richer developer data, and commercial use
-without a RepDB attribution.
+Counts checked **September 8, 2026**: this free snapshot contains **601 exercises**;
+the current paid catalog contains **608**. Standard includes motion animations for
+**496 exercises**; the other **112 exercises use static illustrations**.
+Paid tiers add richer assets and developer data, with no RepDB attribution required.
 
-| | **Free** (this repo) | [**Starter**](https://repdb.co/pricing?utm_source=github-dataset) | [**Standard**](https://repdb.co/pricing?utm_source=github-dataset) |
+| | **Free** (this repo) | [**Starter**](https://repdb.co/pricing/) | [**Standard**](https://repdb.co/pricing/) |
 |---|---|---|---|
-| Exercise set | all 601 fully illustrated exercises | same 601-exercise catalog | same 601-exercise catalog |
+| Exercise set | 601 exercises in this public snapshot | 608 exercises | 608 exercises |
 | Still illustrations | flat style · solid background · 512×512 WebP | flat **+ classic** styles · 1024×1024 WebP | Starter **+ transparent classic backgrounds** |
-| Classic art direction | — | designed classic style with target-muscle highlighting | same classic assets, ready for any theme |
-| Animation | — | — | looping classic exercise animations with transparent backgrounds |
+| Classic art direction | — | designed classic style with target-muscle highlighting | one consistent character with target-muscle highlighting, ready for any theme |
+| Animation | — | — | smooth looping motion for **496 exercises**, with transparent backgrounds |
 | Data & developer extras | JSON + WebP | JSON with activity metrics + relations graph | Starter **+ workout templates + AI embeddings** |
 | Languages | EN · DE · ES | EN · DE · ES | EN · DE · ES |
 | Commercial license | visible RepDB attribution required; in-app use | use under your own brand, no attribution | use under your own brand, no attribution |
 
-➡️ **[repdb.co/pricing](https://repdb.co/pricing?utm_source=github-dataset)** — one payment, no subscription, no API, no rate limits.
+➡️ **[Standard details & pricing](https://repdb.co/pricing/)** — one payment, no subscription, no API, no rate limits.
 
 ## See it in real apps
 
@@ -146,7 +159,7 @@ Example integrations (each vendors this dataset):
 
 ## Links
 
-- ✨ **Premium assets & pricing** — [repdb.co](https://repdb.co/pricing?utm_source=github-dataset)
+- ✨ **Premium assets & pricing** — [repdb.co](https://repdb.co/pricing/)
 - 🧪 **Live browser for this dataset** — https://exercise-dataset.com/
 - 📄 **One page per exercise** — muscles worked, equipment, instructions, tips and the raw JSON
   record, e.g. https://exercise-dataset.com/exercise/bulgarian-split-squat/
